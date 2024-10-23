@@ -13,7 +13,7 @@ a{
 }
 .header{
     border-bottom: 2px solid black;
-    margin: 0;
+
 }
 li a + a{
     background-color: #389C73;
@@ -35,6 +35,8 @@ li :first-child {
     justify-content: space-between;
     align-items: center;
     margin: 0px  65px;
+    height: 101px;
+    
 }
 .navbar ul{
     text-decoration: none;
