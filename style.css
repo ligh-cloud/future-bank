@@ -11,6 +11,10 @@ a{
     font-weight: 600;
 
 }
+.header{
+    border-bottom: 2px solid black;
+    margin: 0;
+}
 li a + a{
     background-color: #389C73;
     color: white;
