@@ -137,7 +137,7 @@ footer h3{
 }
 .home-image {
   position: relative;
-  background-color: var(--primary-color);
+  background-color: var(--dark-color);
   height: 100%;
 }
 .home img {
@@ -278,6 +278,25 @@ font-family: inter;
   border-radius: 50px;
   transition: all 0.3s ease;
 }
+.y-us-btn {
+  margin-top: 400px;
+  margin-left: 50px;
+  padding: 10px 30px ; 
+  width: 250px;
+  background-color: white;
+  
+  border-radius: 50px;
+  transition: all 0.3s ease;
+  font-size: 600;
+  display: flex;
+  justify-content: center;
+  
+}
+.y-us-btn a{
+  font-size: 600;
+  font-size: 22px;
+  color: black;
+}
 .explore-btn a{
   padding: 10px 20px 10px; 
   width: 150px;
@@ -351,7 +370,9 @@ font-family: inter;
 }
 /* Features Section */
 .features {
-  padding: 1rem 5%;
+  padding: 1rem 0 1rem 0;
+  top: 10%;
+  
 }
 
 .feature-cards {
@@ -360,20 +381,27 @@ font-family: inter;
   margin-bottom: 2rem;
   overflow-x: auto;
   scroll-behavior: smooth;
+  
+  
 }
+
 
 .feature-card {
   flex: 1;
   min-width: 250px;
-  padding: 2rem;
-  background: white;
-  border-radius: 10px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  padding: 1rem;
+  background: rgba(0, 0, 0, 0.311);
+  border-radius: 25px;
+  border-color: black;
+  border: 8px solid rgba(0, 0, 0, 0.395);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
+  
 }
 .feature-card-mobile {
   /* flex: 1; */
   padding: 10px;
   display: none;
+  width: 200px;
 }
 
 .carousel-dots {
@@ -414,7 +442,8 @@ font-family: inter;
 }
 @media screen and (max-width:412px){
   .body-body{
-
+    height: 180vh;
+    width: 100%;
     background-image: linear-gradient(#B0E9D3 , #3BC38E);
   }
   .log-bar{
@@ -434,6 +463,13 @@ font-family: inter;
     font-size: 28px;
 
   }
+  .mobile-text h3{
+    font-weight: 600;
+    color: white;
+    font-family: inter;
+    font-size: 18px;
+
+  }
   .notre-plateform p{
     display: block;
     /* width: 80px; */
@@ -448,7 +484,7 @@ font-family: inter;
     
    border-radius: 60px;
    font-family: inter;
-   font-size: 400;
+   font-size: 500;
    color: white;
   }
   .navbar-mobile .menu-hamburger{
@@ -545,9 +581,24 @@ font-family: inter;
 display: block;
 }
 .feature-cards h3{
-  font-family: inter;
-  color: white;
+  font-family: volkhov;
+  color: black;
+  font-size: 26px;
 }
-
-
+.feature-cards p{
+  font-family: inter;
+  color: black;
+}
+.home-img{
+  display: none;
+}
+.home{
+  display: none;
+}
+.about-add{
+  display: none;
+}
+.feature-card{
+  padding-bottom: 5rem;
+}
 }
