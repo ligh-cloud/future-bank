@@ -30,6 +30,11 @@ li :first-child {
     border-radius:20px ;
     padding: 10px 15px;
 }
+.log-bar{
+    position: fixed;
+    background-color: white;
+    width: 100%;
+}
 .log-bar header{
     display: flex;
     justify-content: space-between;
@@ -50,7 +55,7 @@ li :first-child {
 .home-img {
     width: 100%;
     height: 100vh;
-    background-image: url(img/image10.png) ;
+    background-image: url('img/image10.png') ;
     background-size: cover;
 }
 .home-img a{
