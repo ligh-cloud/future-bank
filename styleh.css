@@ -257,5 +257,87 @@ body {
 .logo2 img{
     width: 150px;
     height: auto;
-   pointer-events: none;
 }  
+@media only screen and (max-width:412px){
+    .container-login{
+        display: grid;
+        grid-template-rows: repeat(4, 1fr);
+        background-color: transparent;
+        box-shadow: none;
+    }
+    .login-text-right{
+        grid-column: 1/3;
+        grid-row: 1/2;
+    }
+    .form-login-box{
+        grid-column: 1/3;
+        grid-row: 2/3;
+    }
+    .logo{
+        top :-30px;
+        left: 0px;
+        z-index: 3;
+}
+.signup-text a { 
+    width: 100px;
+}
+@media only screen and (max-width:412px){
+    .signup-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.signup-right {
+    width: 100%;
+    height: 1170px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 60px;
+}
+.signup-left {
+    background-image: url(img/GbLoginText.png); 
+    background-size: cover;
+    background-position: center;
+    width: 800px;
+    height: 1200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.form-group input {
+    width: 300px;
+    flex: 1;
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.form-checkbox {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    font-size: 20px;
+    line-height: 1.5;
+    width: 300px;
+}
+.signup-section {
+    display:flex;
+    height: 100vh;
+    width: 100%;
+    background-color: #C0D5CE ;
+    padding-top: 0;
+} 
+.btn-register {
+    margin-left: 100px;
+}
