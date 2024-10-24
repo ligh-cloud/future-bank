@@ -15,6 +15,7 @@
   <title>Document</title>
 </head>
 <body>
+  <section class="body-body">
     <section class="log-bar">
         <div class="header">
         <header>
@@ -37,6 +38,53 @@
           </ul>
         </div>
       </section>
+      <section class="navbar-mobile">
+        <a href="#"><img src="img\Ajouter_un_titre-removebg-preview1.png" alt="Logo" /></a>
+        <img src="img/menu sandwish 1.png" alt="menu-hamburger" class="menu-hamburger">
+        
+      </section>
+      <div class="nav-links">
+        <ul>
+          <li><a href="#">Projet</a></li>
+            <li><a href="#">Prêt</a></li>
+            <li><a href="#">Apropos</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Log in</a></li>
+            <li><a href="#">Sign up</a></li>
+            <li><a href="#">Profil</a></li>
+        </ul>
+      </div>
+
+      <section class="notre-plateform">
+        <p>Notre plateform, votre succés</p>
+      </section>
+      <section class="mobile-text">
+        <h1>Building the capacity of promising traders worldwide</p>
+      </section>
+      <section class="features">
+        <div class="feature-cards">
+            <div class="feature-card-mobile">
+                <img src="img/layers-1--design-layer-layers-pile-stack-align.png" alt="">
+                <h3>Up to 95% of the population 
+                  <span style="font-weight: 150;">de la répartition des bénéfices </span></h3>
+            </div>
+            <div class="feature-card-mobile">
+              <img src="img/shield-2--shield-protection-security-defend-crime-war-cover.png" alt="">
+              <h3>About 300 00
+                <span style="font-weight: 150;">Negatioations accounts</span></h3>
+          </div>
+          <div class="feature-card-mobile">
+            <img src="img/coin-share--payment-cash-money-finance-receive-give-coin-hand.png" style="width: 20px; height: 20px;" alt="">
+            <h3>Up to 95% of the population de la répartition des bénéfices </h3>
+        </div>
+        <div class="feature-card-mobile">
+          <img src="img/graph-arrow-increase--ascend-growth-up-arrow-stats-graph-right-grow.png" style="width: 20px; height: 20px;"alt="">
+          <h3>Up to 95% of the population de la répartition des bénéfices </h3>
+      </div>
+            
+    </section>
+    </section>
+
       <section class="home-img">
         <a href="#">Explore more</a>
         <img src="img\down-arrow.png" alt="Scroll" />
@@ -139,6 +187,7 @@
         <span class="dot"></span>
     </div>
 </section>
+</section>
 
 <section class="footer">
     <div class="support">
@@ -184,12 +233,25 @@
     </div>
     <div class="social">
       <h3>Social</h3>
-      <img src="img\twitter.png" alt="twitter" style="width: 50px; height: 50px;">
-      <img src="img\instagram.png" alt="instagram" style="width: 50px; height: 50px;">
-      <img src="img\tiktok.png" alt="tiktok" style="width: 50px; height: 50px;">
-      <img src="img\facebook.png" alt="facebook"style="width: 50px; height: 50px;">
+      <img src="img\twitter.png" alt="twitter" >
+      <img src="img\instagram.png" alt="instagram">
+      <img src="img\tiktok.png" alt="tiktok">
+      <img src="img\facebook.png" alt="facebook">
     </div>
   </section>
 
 </body>
+<script>
+  const menuHamburger = document.querySelector(".menu-hamburger")
+  const navLinks = document.querySelector(".nav-links")
+  const navItems = document.querySelectorAll(".nav-links ul li a");
+  menuHamburger.addEventListener('click',()=>{
+  navLinks.classList.toggle('mobile-menu')
+  });
+  navItems.forEach(item => {
+    item.addEventListener('click', () => {
+        navLinks.classList.remove('mobile-menu');
+    });
+});
+</script>
 </html>
