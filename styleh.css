@@ -113,16 +113,31 @@
 /* css of page log in desctop */
 .login-section{
     width: 100%;
-    height: 1024px;
+    height : 100vh;
     background-color:#C0D5CE;
-    position: fixed;
-    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* position: relative; */
+    /* position: fixed;
+    background-size: cover; */
 }
 .container-login{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    background-color:#CBE3DB ;
+    border-radius: 9px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    max-width: 1200px;
+    /* position: relative;
+    overflow: visible; 
+    z-index: 1; */
     /* display:grid; */
     /* grid-template-columns: 1fr 1fr; */
     /* gap: 10px; */
-    height: 525px;
+    /* height: 525px;
     background-color: #CBE3DB;
     background-size: cover;
     position: relative;
@@ -133,51 +148,247 @@
     margin-left: 20px;
     margin-right: 20px;
     padding-top: 50px ;
-    padding-bottom: 50px;
+    padding-bottom: 50px; */
 }
+/* .logo{
+    position:absolute;
+    top :-30px;
+    left: -30px;
+    z-index: 3;
+ }
+.logo img{
+    width: 150px;
+    height: auto;
+   pointer-events: none;
+}  */
 .login-text-right{
     background-image: url(img/GbLoginText.png); 
-    background-size: cover;
+    padding: 40px;
+    display: flex;
+    flex-direction:column ;
+    justify-content: center;
+    align-items: center;
+    border-radius: 9px;
+    /* background-size: cover;
     height: 520px; 
     width: 720px; 
     margin-top: -15px; 
-    margin-left: 760px;
-    border-radius: 9px;
+    margin-left: 760px; */
+   
  }
  .login-text-right h1{
     font-family: 'Poppins', sans-serif;
-    font-weight: 600;
-    width: 391px;
-    font-size: 30px; 
-    margin-left: 140px;
-    margin-right: 180px;
     text-align: center;
-    padding-top: 80px;
+    font-size: 30px; 
+    /* font-weight: 600; */
+    /* width: 391px; */
+    /* margin-left: 140px;
+    margin-right: 180px; */
+    /* padding-top: 80px; */
  }
  .login-text-right P{
     font-family: 'Poppins', sans-serif;
-    font-weight: 600;
-    width: 391px;
+    margin-top: 20px;
     font-size: 20px; 
-    margin-left: 140px;
-    margin-right: 180px;
     text-align: center;
-    padding-top: 10px;
+    /* font-weight: 600;
+    width: 391px; */
+    /* margin-left: 140px;
+    margin-right: 180px; */
+    /* padding-top: 10px; */
 
  }
  .form-login-box{
-    /* display: flex;
-    align-items:flex-start; */
-    background-image: url(img/GbLoginText.png);
-    background-size: cover; 
+    display: flex;
+    align-items:center;
+    flex-direction: column;
+    background-color: #CBE3DB;
+    padding: 30px;
+    border-radius: 9px;
+    align-items: center;
+    /* z-index: 2; */
+    /* background-size: cover; 
     height: 520px; 
     width: 720px; 
     margin-top: -540Px; 
     margin-right: 760px;
-    border-radius: 9px;
+     */
  }
  .form-login-box h1{
-    width: 253px;
-    height: 50px;
-    
+    /* width: 253px;
+    height: 50px; */
+    color: black;
+    font-family: 'poppins','sans serif';
+    font-size: 30px; ;
+    margin-bottom: 20px;
  }
+ .form-login input[type="email"],.form-login input[type="password"]{
+    width: 300px;;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border :none ;
+    font-size: 16px;
+ }
+ .forget-pass{
+    text-align: right;
+    width: 100%;
+    color:black;
+    margin: 10px 0;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3 ease;
+    font-weight: bold;
+
+}
+.forget-pass:hover{
+    color: #00ccff;
+}
+
+.login-button {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+.signup-text {
+    margin-top: 20px;
+    color: black;
+    font-size: 14px;
+}
+.signup-text a {
+    color: white;
+    background-color: black;
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0,3s ease;
+}
+.signup-text a:hover{
+    background-color: rgb(220, 220, 245); 
+}
+/* css pour sign up  */
+* {
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #C0D5CE;
+}
+
+.signup-section {
+    display: flex;
+    height: 87vh;
+    background-color: #C0D5CE ;
+    padding-top: 50px;
+   padding-left: 25px;
+   padding-right: 25px;
+}
+
+
+/* Partie gauche (logo et texte) */
+.signup-left {
+    background-image: url(img/GbLoginText.png); 
+    background-size: cover;
+    background-position: center;
+    width: 35%;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img {
+    width: 120px;
+    height: auto;
+    margin-bottom: 30px;
+}
+
+.signup-text {
+    font-size: 24px;
+    text-align: center;
+    color: #333;
+    font-weight: 600;
+}
+
+/* Partie droite (formulaire) */
+.signup-right {
+    width: 65%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 60px;
+}
+
+.signup-right h1 {
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.signup-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    gap: 20px;
+}
+
+.form-group input {
+    flex: 1;
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+.form-checkbox {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.form-checkbox input {
+    margin-top: 5px;
+}
+
+.form-checkbox a {
+    color:black;
+    text-decoration: none;
+}
+
+.form-checkbox a:hover {
+    text-decoration: underline;
+}
+
+.btn-register {
+    background-color: #7DA48A;
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 176px; 
+    margin-left: 280PX;
+}
+
+.btn-register:hover {
+    background-color: #6d917c;
+}
