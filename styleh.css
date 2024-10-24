@@ -258,6 +258,12 @@ body {
     width: 150px;
     height: auto;
 }  
+.burger1{
+    display: none;
+}
+.burger2{
+    display: none;
+}
 @media only screen and (max-width:412px){
     .container-login{
         display: grid;
@@ -274,9 +280,10 @@ body {
         grid-column: 1/3;
         grid-row: 1/2;
         padding: 0;
-        height: 100vh;
+        height: 105vh;
         width: 110vw;
         gap: 30px;
+        background-size: cover;
     }
     .form-login-box{
         grid-column: 1/3;
@@ -288,11 +295,15 @@ body {
         left: 0px;
         z-index: 3;
 }
-/* .login-text-right{
-    height: px;
-} */
 .signup-text a { 
     width: 100px;
+}
+  .burger1{
+   display: block;
+   position: absolute;
+   top: 0;
+   right: 0;
+   margin: 0;
 }
 @media only screen and (max-width:412px){
     .signup-form {
@@ -354,3 +365,9 @@ body {
 .btn-register {
     margin-left: 100px;
 }
+.burger2{
+    display: block;
+    position: absolute;
+    top: 0;
+    padding-left: 300px;
+ }
