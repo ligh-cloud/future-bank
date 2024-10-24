@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="stylecontact.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300..900&family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <title>FutureBank FAQ</title>
+    <!-- <script>
+      const allCross = document.querySelectorAll('.visible-pannel img');
+      console.log(allCross);
+
+
+      allCross.forEach(element => {
+
+          element.addEventListener('click', function(){
+
+              const height = this.parentNode.parentNode.childNodes[3].scrollHeight;
+
+              const currentChoice = this.parentNode.parentNode.childNodes[3];
+
+              // console.log(this.src);
+              if(this.src.includes('croix')){
+                  this.src = '/ressources/minus.svg';
+                  gsap.to(currentChoice, {duration: 0.2, height: height + 40, opacity: 1, padding: '20px 15px'})
+              } else if (this.src.includes('minus')){
+                  this.src = '/ressources/croix.svg';
+                  gsap.to(currentChoice, {duration: 0.2, height: 0, opacity: 0, padding: '0px 15px'})
+              }
+              
+          })
+
+      })
+      
+    </script> -->
+  </head>
+
+  <body>
+    <!-- header -->
+    <section class="log-bar">
+      <div class="header">
+      <header>
+        <img src="img\Ajouter_un_titre-removebg-preview1.png" alt="logo" />
+        <ol>
+          <li>
+            <a href="#">Log in</a>
+            <a href="#">Sign up</a>
+          </li>
+        </ol>
+      </header>
+    </div>
+      
+      <div class="navbar">
+        <ul>
+          <a href="#">Projet ></a>
+          <a href="#">Prêt ></a>
+          <a href="#">A propos</a>
+          <a href="#">Contact</a>
+        </ul>
+      </div>
+    </section>
+    <!-- end header-->
+     <!-- FAQ-->
+     <section class="faq-section">
+      <div class="faq">
+        <div class="titre">
+          <h1>FAQ</h1>
+        </div>
+    
+        <div class="container-faq">
+    
+          <details class="questions">
+            <summary>
+              <h2>Comment puis-je ouvrir un compte chez FutureBank ?</h2>
+              <img src="img/iconv.png" alt="icon">
+            </summary>
+            <pre>Réponse :
+              Ouvrir un compte chez FutureBank est simple et rapide. Suivez ces étapes :
+              1: Téléchargez notre application mobile ou visitez notre site web.
+              2: Remplissez le formulaire d'inscription en fournissant vos informations personnelles.
+              3: Vérifiez votre identité à l'aide de votre pièce d'identité.
+              4: Une fois votre identité vérifiée, votre compte sera activé instantanément.</pre>
+          </details>
+    
+          <details class="questions">
+            <summary>
+              <h2>Quels types de projets d'investissement proposez-vous ?</h2>
+              <img src="img/iconv.png" alt="icon">
+            </summary>
+            <pre>Réponse :
+              Chez FutureBank, nous proposons une large gamme de projets d'investissement adaptés à différents profils de risque :
+              1-Projets à faible risque : Investissements dans des obligations gouvernementales ou des projets immobiliers stables.
+              2-Projets à risque modéré : Investissements dans des entreprises bien établies ou des fonds communs.
+              3-Projets à haut risque : Startups, crypto-monnaies, et autres investissements innovants avec un fort potentiel de retour 
+              sur investissement.</pre>
+          </details>
+    
+          <details class="questions">
+            <summary>
+              <h2>Comment fonctionne le calculateur de prêt ?</h2>
+              <img src="img/iconv.png" alt="icon">
+            </summary>
+            <pre>Réponse :
+              Le calculateur de prêt de FutureBank vous permet de simuler vos mensualités avant de faire une demande.
+               Voici comment ça marche :
+              1-Indiquez le montant que vous souhaitez emprunter.
+              2-Sélectionnez la durée du prêt.
+              3-Le calculateur affichera le montant des mensualités ainsi que le coût total de votre prêt, incluant les intérêts.</pre>
+          </details>
+    
+          <details class="questions">
+            <summary>
+              <h2>Comment puis-je contacter un conseiller FutureBank ?</h2>
+              <img src="img/iconv.png" alt="icon">
+            </summary>
+            <pre>Réponse :
+              Vous pouvez contacter nos conseillers de plusieurs façons :
+              1-Chat en direct sur notre site web ou notre application mobile.
+              2-Par téléphone au 01 23 45 67 89.
+              3-Via email à support@futurebank.com. Nos conseillers sont disponibles du lundi au vendredi, de 9h à 18h.</pre>
+          </details>
+    
+          <details class="questions">
+            <summary>
+              <h2>Puis-je rembourser un prêt anticipativement ?</h2>
+              <img src="img/iconv.png" alt="icon">
+            </summary>
+            <pre>Réponse :
+              Oui, vous pouvez rembourser votre prêt à tout moment avant la fin de la période de remboursement. 
+              Aucun frais de remboursement anticipé ne vous sera facturé.
+               Vous ne paierez que les intérêts dus jusqu'à la date de remboursement.</pre>
+          </details>
+    
+        </div>
+      </div>
+    </section>
+    
+    
+   <!-- end FAQ -->
+    <section class="contact-total" >
+      
+      <div class="titre">
+        <h1>Contactez-nous</h1>
+      </div>
+      <div class="contact-container">
+        <div class="contact-wrapper">
+          <div class="contact-icon">
+              <img src="img/iconmessage.png" alt="Contact Icon">
+          </div>
+          <div class="form-container">
+            <form action="#" method="">
+                <div class="grid-container">
+                    <div class="input-group">
+                        <label for="name">Name<span style="color: red;">*</span></label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="email">Email<span style="color: red;">*</span></label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="telephone">Téléphone<span style="color: red;">*</span></label>
+                        <input type="tel" id="telephone" name="telephone" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="subject">Sujet</label>
+                        <input type="text" id="subject" name="subject">
+                    </div>
+                </div>
+                <div class="input-group full-width">
+                    <br>
+                    <label for="message">Votre message</label>
+                    <textarea id="message" name="message" ></textarea>
+                </div>
+                <div class="submit-button">
+                    <button type="submit">Submit</button>
+                </div>
+            </form>
+        </div>
+      </div>      
+      </div>
+    </section>
+
+    <!-- footer -->
+    <section class="footer">
+      <div class="support">
+        <h3>Support</h3>
+        <p>(456) 789-12301</p>
+        <br />
+        <p>info@future-bank.com</p>
+        <br />
+        <p>hay sharaf</p>
+        <br />
+        <p>dakhla AGADIR</p>
+      </div>
+      <div class="news">
+        <h3 style="padding-left: 30px;">News</h3>
+        <div class="netflix">
+          <img
+            src="img\netflix.png"
+            alt="logo"
+            style="width: 65px; height: 82px"
+          />
+          <p>Netflix has recently seen a significant rise in its stock price</p>
+        </div>
+        <div class="apple">
+          <img
+            src="img\apple-logo.png"
+            alt="logo"
+            style="width: 64px; height: 76px"
+          />
+          <p>
+            Apple is expected to bounce back in 2024. Key to this recovery are
+            products like the Apple Vision Pro
+          </p>
+        </div>
+      </div>
+      <div class="about-us">
+        <h3>About us</h3>
+        
+          <h4>Our company</h4>
+          <h4>Career</h4>
+          <h4>Company overview</h4>
+          <h4>Our company</h4>
+        
+      </div>
+      <div class="social">
+        <h3>Social</h3>
+        <img src="img\twitter.png" alt="logo" style="width: 50px; height: 50px;">
+        <img src="img\instagram.png" alt="logo" style="width: 50px; height: 50px;">
+        <img src="img\tiktok.png" alt="logo" style="width: 50px; height: 50px;">
+        <img src="img\facebook.png" alt="logo"style="width: 50px; height: 50px;">
+      </div>
+    </section>
+    <!-- end footer -->
+  </body>
+</html>
