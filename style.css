@@ -4,24 +4,21 @@
   --secondary-color: #3BC38E;
   --gray-color: #9E9E9E;
   --dark-color: #2e4b1f;
-  --pink-color: #FFD7EF;
-  --lightblue-color: #A0E1E1;
-  --beige-color: #FFC091;
   --transition-time: 5s;
 }
-
 * {
   padding: 0;
   margin: 0;
   font-family: "Istok Web", sans-serif;
   list-style-type: none;  
 }
-
+.body, .body-body {
+  background: var(--primary-color);
+}
 a {
   text-decoration: none;
   font-weight: 600;
 }
-
 /* Header Styles */
 .header {
   border-bottom: 2px solid black;
@@ -70,9 +67,18 @@ li :first-child {
 /* Home Styles */
 .home-img {
   width: 100%;
-  height: 100vh;
+  height: auto;
   background-image: url('img/image10.png');
   background-size: cover;
+}
+.pret-img{
+  width: 100%;
+  height: 1000px;
+  background-image: url('img/pret.png');
+  background-size: cover;
+  /* background-position: center; */
+  
+  
 }
 .home-img img{
   width: 7em;
@@ -277,7 +283,8 @@ footer h3 {
 }
 
 .add-btn {
-  margin-top: 270px;
+  margin-top: 280px;
+  margin-bottom: 30px;
   padding: 10px 20px; 
   background-color: white;
   color: black;
@@ -353,7 +360,7 @@ footer h3 {
   border:2px solid white;
   border-radius: 20px;
   width: 300px;
-  height: 300px;
+  height: 310px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -362,7 +369,7 @@ footer h3 {
 }
 
 .savings-container p {
-  padding: 200px;
+  padding: 250px;
   font-weight: bold;
   font-size: 25px;
   font-family: isktop web;
@@ -502,6 +509,120 @@ p.netflix-description{
 }
 
 
+.contact-head{
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	background: url(images/Design\ sans\ titre.png);
+	background-size: cover;
+	background-position: center;
+	display: grid;
+	grid-template-columns: repeat(1, 1fr);
+	align-items: center;
+}
+.contact-head-text h1{
+	font-size: var(--big-font);
+	line-height: 1.2;
+	color: var(--bg-color);
+	font-family: Sansita Swashed;
+	letter-spacing: 4px;
+	margin-bottom: 100px;
+}
+.contact-head-text p{
+	color: var(--second-color);
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 38px;
+	margin-bottom: 5px;
+	margin-top: 100px;
+}
+
+.title-page{
+	display: flex;
+    align-items: center;
+}
+p{
+  font-family: inter;
+  font-weight: 600;
+  font-size: 30px;
+  color: var(--gray-color);
+  padding-left: 300px;
+}
+.title-page .line{
+  height: 1px;
+  background-color: black;
+}
+.title-page span{
+    padding: 0 10px;
+    font-family: volkhov;
+    font-size: 60px;
+}
+.title-page .line:first-of-type {
+  width: 300px;
+}
+.title-page .line:last-of-type {
+  flex: 1;
+}
+.form-text {
+  width: 100%;
+  height: 530px;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+.form-text form .request{
+    display: flex;
+    margin: 32px 0;
+  
+}
+.form-text h2{
+font-size: 60px;
+margin-bottom: 5px;
+font-family: volkhov;
+color: black;
+}
+.form-text p{
+font-size: var(--p-font);
+color: #933C24;
+opacity: 58%;
+line-height: 30px;
+font-weight: 600;
+}
+.submit-container {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 0;
+}
+input[type=text], select, textarea{
+width: 100%;
+padding: 15px;
+border: 1px solid var(--main-color);
+border-radius: 12px;
+box-sizing: border-box;
+margin-top: 10px;
+margin-bottom: 1px;
+resize: vertical;
+background-color: var(--second-color);
+color: var(--main-color);
+}
+
+input[type=submit] {
+background-color: var(--main-color);
+color: var(--text-color);
+padding: 10px 100px;
+border: 1px solid var(--main-color);
+  border-radius: 15px;
+cursor: pointer;
+display: inline-block;
+transition: 0.3s ease;
+}
+
+input[type=submit]:hover {
+background-color: transparent;
+  color: var(--main-color);
+font-weight: 600;
+transform: scale(1.01);
+}
 @media screen and (max-width: 412px) {
   .body-body {
     height: 165vh;
