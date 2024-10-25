@@ -119,6 +119,7 @@ li :first-child {
 .company-image {
 
   padding: 40px;
+  z-index: 2;
 
 
 }
@@ -195,14 +196,14 @@ li :first-child {
 }
 
 .stock-price {
-  font-size: 70px;
+  font-size: clamp(40px, 6vw, 70px);
   font-weight: bold;
   color: black;
   margin-left: 30px;
 }
 
 .currency {
-  font-size: 36px;
+  font-size: clamp(24px, 4vw, 36px);
   font-weight: bold;
   color: black;
   margin-left: 30px;
@@ -211,7 +212,7 @@ li :first-child {
 
 .year-stock {
   color: #3bcb8f;
-  font-size: 36px;
+  font-size: clamp(24px, 4vw, 36px);
   margin-left: 30px;
 }
 
@@ -227,7 +228,7 @@ li :first-child {
 }
 
 footer h3 {
-  font-size: 36;
+  font-size: clamp(24px, 4vw, 36px);
   font-weight: bold;
   margin-bottom: 0;
 }
@@ -268,6 +269,7 @@ footer h3 {
   display: flex;
   gap: 15px;
   padding-top: 10px;
+  
 }
 
 /* .footer{
@@ -399,6 +401,7 @@ footer h3{
     width: 100vw;
     height: 300px;
     background-color: #38A28C;
+    background-size: cover;
   }
 
   .navbar ul {
@@ -440,5 +443,60 @@ footer h3{
     font-weight: bold;
     color: black;
     text-align: center;
-  } */
+  }
+  .footer {
+    height: 500px;
+    width: 100vw;
+    row-gap: 2px;
+    column-gap: 2px;
+    background-color: #38A28C;
+  }
+
+  .news {
+    grid-column: 14/23;
+  }
+  .support p{
+    color: black;
+    font-size: clamp(14px, 2vw, 18px);
+  }
+  .support h3, .about-us h3, .news h3, .social h3{
+    font-size: 25px;
+    font-weight: 600;
+  }
+  .about-us {
+    grid-column: 8/12;
+    grid-row: 2/7;
+    font-size: 13px;
+    gap: 10px;
+  }
+
+  .support {
+    grid-column: 2/6 ;
+    grid-row: 2/5;
+    font-size: 13px;
+    gap: 5px;
+  }
+.about-us h4{
+  font-size: 18px;
+}
+  .social {
+    grid-column: 2/12;
+  }
+ 
+
+  .social {
+    flex-direction: row;
+    gap: 10px;
+    width: 30px; 
+    height: 30px;
+  }
+
+  .apple , .netflix {
+    gap: 10px;
+    padding-top: 10px;
+    width: 200px; 
+    height: 200px;
+    font-size: 12px;
+  }
+  
 }
