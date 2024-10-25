@@ -74,26 +74,25 @@ li :first-child {
   color: black;
 }
 
-
+/* Burger icon styling */
 .burger-icon {
   font-size: 24px;
   cursor: pointer;
-  display: none; 
+  display: none; /* Hidden by default for desktop */
   position: fixed;
   top: 20px;
   right: 20px;
   z-index: 100;
 }
 
-
+/* Navbar styling */
 .navbar-mobile {
-  display: none; 
+  display: none; /* Hidden by default */
   position: fixed;
-
   top: 0;
-  left: 0;
+  right: 0;
   height: 100vh;
-  width: 80%;
+  width: 81.5%;
   background-color: #389C73;
   padding-top: 60px;
   flex-direction: column;
@@ -101,7 +100,6 @@ li :first-child {
   z-index: 10;
 }
 .nav-bar-mobile{
-  display: none;
   background-color: white;
   width: 90%;
   height: 62px;
@@ -110,8 +108,7 @@ li :first-child {
 
 }
 .logo-button{
-
-  display: none;
+  display: flex;
   justify-content: space-around;
   align-items: center;
   gap: 130px;
@@ -119,7 +116,7 @@ li :first-child {
 .logo-mobile{
   width: 25%;
   margin-right: 20px;
-  display: none;
+  
 }
 
 .navbar-mobile a {
@@ -131,7 +128,6 @@ li :first-child {
 }
 .icon-company-link img{
      width:65px;
-     display: none;
 
 }
 .icon-company-link{
@@ -191,7 +187,7 @@ li :first-child {
 }
 
 .company-image h2 {
-  font-size: clamp(72px, 6vw + 1rem, 104px);
+  font-size: 96px;
   text-align: center;
   margin: 80px;
   font-weight: bold;
@@ -339,14 +335,7 @@ footer h3 {
 }
 
 @media (min-width: 0px) and (max-width: 767px) {
-  .burger-icon  .nav-bar-mobile{
-    display: block;
-   
-  }
-  .logo-button{
-    display: flex;
-  }
-  .logo-mobile .icon-company-link img{
+  .burger-icon {
     display: block;
   }
   .hover-content {
@@ -375,7 +364,7 @@ footer h3 {
 
 .stock-price, .currency, .year-stock {
     text-align: left; 
-    font-size: clamp(14px, 1vw + 1rem, 18px);
+    font-size: 16px;
     margin-left: 10px;
     color: white; 
     display: block; 
@@ -429,7 +418,7 @@ footer h3 {
   }
 
   .company-image h2 {
-    font-size: clamp(36px, 4vw + 1rem, 56px);
+    font-size: 48px;
     margin: 20px;
   }
 
@@ -448,7 +437,7 @@ footer h3 {
   }
 
   .stock-price {
-    font-size: clamp(20px, 3vw + 1rem, 36px);
+    font-size: 28px;
     font-weight: bold;
     color: black;
     text-align: center;
@@ -457,7 +446,7 @@ footer h3 {
 
   .currency,
   .year-stock {
-    font-size: clamp(14px, 1vw + 1rem, 18px);
+    font-size: 16px;
     font-weight: bold;
     color: black;
     text-align: center;
@@ -478,24 +467,24 @@ footer h3 {
     font-size: clamp(14px, 2vw, 18px);
   }
   .support h3, .about-us h3, .news h3, .social h3{
-    font-size: clamp(18px, 3vw + 1rem, 32px);
+    font-size: 25px;
     font-weight: 600;
   }
   .about-us {
     grid-column: 8/12;
     grid-row: 2/7;
-    font-size: clamp(10px, 2vw + 1rem, 16px);
+    font-size: 13px;
     gap: 10px;
   }
 
   .support {
     grid-column: 2/6 ;
     grid-row: 2/5;
-    font-size: clamp(10px, 2vw + 1rem, 16px);
+    font-size: 13px;
     gap: 5px;
   }
 .about-us h4{
-  font-size: clamp(14px, 2vw + 1rem, 22px);
+  font-size: 18px;
 }
   .social {
     grid-column: 2/12;
@@ -514,7 +503,7 @@ footer h3 {
     padding-top: 10px;
     width: 200px; 
     height: 200px;
-    font-size: clamp(10px, 1.5vw + 1rem, 16px);
+    font-size: 12px;
   }
   
 }
