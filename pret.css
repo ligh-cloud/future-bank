@@ -107,32 +107,151 @@ p{
   }
   .about-add {
     display: flex;
-    padding: 100px 20px ;
     background-color: var(--primary-color);
   }
   .about-add img{
     border-radius: 50px;
-    width: 50vw;
-    height: 50vh;
+    padding: 80px 0;
+    width: 60vw;
+    height: 80vh;
+    margin-left: 30px;
   }
   .text-about-add {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    padding: 200px 100px 0 100px;
+    padding: 50px 100px;
   }
   
   .text-about-add h1 {
     font-family: volkhov;
     font-size: 40px;
-    padding-bottom: 60px;
+    font-weight: 600;
+    padding-bottom: 40px;
   }
-  
-  .text-about-add a {
-    font-family: volkhov;
+  .text-about-add h2 {
+    font-family: inter;
+    font-size: 20px;
+    font-weight: 600;
+    padding-bottom: 30px;
+  }
+  .text-about-add p {
+    font-family: inter;
     font-size: 15px;
+    padding-bottom: 20px;
+  }
+  .contact-icon{
+    display: none;
   }
   
+.contact-btn {
+    margin-top: 40px;
+    padding: 10px 20px 10px; 
+    width: 100px;
+    background-color: black;
+    color: white;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+  }
+  .contact {
+    display: none;
+    margin: 40px auto;
+    padding: 10px 30px ; 
+    width: 250px;
+    background-color: white;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+  }
+  
+  .contact a {
+    font-size: 22px;
+    color: black;
+  }
+.explore-btn {
+    margin-top: 40px;
+    padding: 10px 20px 10px; 
+    width: 220px;
+    background-color: black;
+    color: white;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+  }
+  /* Features Section */
+.features {
+    padding: 1.5rem 0 1rem 0;
+  }
+  
+  .feature-cards {
+    display: flex;
+    gap: 2rem;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    margin-bottom: 50px;
+  }
+  .feature-card {
+    min-width: 300px;
+    padding: 1rem;
+    background: rgba(0, 0, 0, 0.311);
+    border-radius: 30px;
+    border: 10px solid rgba(0, 0, 0, 0.395);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
+    
+  }
+  .feature-card-mobile {
+    min-width: 300px;
+    padding: 1rem;
+  }
+  
+  
+  .feature-cards-desktop {
+    display: flex;
+    z-index: 1000;
+    gap: 4rem;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    margin: 250px 0;
+    padding-left: 5.5rem;
+  }
+  .feature-card-desktop {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    min-width: 350px;
+    height: 550px;
+    padding: 1rem;
+    background: rgba(0, 0, 0, 0.311);
+    border-radius: 30px;
+    border: 10px solid rgba(0, 0, 0, 0.395);
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+    
+  }
+  .feature-card-desktop video{
+    width: 100%;
+  }
+  .feature-cards-desktop h3 {
+    font-family: volkhov;
+    color: black;
+    font-size: 30px;
+    font-weight: 600;
+    padding: 10px;
+  }
+  
+  .feature-cards-desktop p {
+    font-family: inter;
+    font-size: 24px;
+    color: black;
+  }
+  .feature-card-desktop a {
+    font-family: inter;
+    font-size: 20px;
+    color: black;
+    padding-top: 300px;
+    padding: 10px;
+    justify-self: flex-end;
+    align-self: flex-end;
+  }
+  
+    
 /* Footer Styles */
 .footer {
     width: 100%;
@@ -221,7 +340,7 @@ p{
     .notre-plateform p {
       display: block;
       position: absolute;
-      top: 11%;
+      top: 15%;
       margin: 20px;
       margin-left: 40px;
       padding: 5px;
@@ -251,6 +370,7 @@ p{
   
   .contact-icon{
     position: sticky;
+    display: block;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -386,6 +506,11 @@ p{
     .footer-bottom{
       display: none;
     }
-    
+    .title-page{
+        display: none;
+    }
+    .pret-img{
+        display: none;
+    }
   }
     

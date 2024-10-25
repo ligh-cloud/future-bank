@@ -716,7 +716,7 @@ transform: scale(1.01);
 }
 @media screen and (max-width: 767px) {
   .body-body {
-    height: 175vh;
+    height: 225vh;
     width: 100%;
     background-image: linear-gradient(var(--primary-color), var(--secondary-color));
   }
@@ -748,7 +748,7 @@ transform: scale(1.01);
   .notre-plateform p {
     display: block;
     position: absolute;
-    top: 11%;
+    top: 13%;
     margin: 20px;
     margin-left: 40px;
     padding: 5px;
