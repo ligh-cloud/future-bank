@@ -51,6 +51,9 @@
     text-align: center;
 
  }
+ .fleche-login{
+    display: none;
+ }
  .form-login-box{
     display: flex;
     align-items:center;
@@ -283,9 +286,16 @@ body {
         width: 148vw;
         gap: 90px;
         background-size: cover;
-        /* margin-left: 100px; */
-        /* padding-left: 100px; */
     }
+    .fleche-login{
+        display: flex;
+        margin-left: 150px;
+    }
+    .fleche-login img{
+        width: 70px;
+        height: 70px;
+    }
+
     .login-text-right h1{
       margin-left: 150px;
     }
