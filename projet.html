@@ -38,34 +38,39 @@
     </div>
     <img src="img\BANK-HOME2.png" alt="home" />
   </section>
-  <!-- <section class="navbar-mobile">
-    <a href="#"><img src="img\Ajouter_un_titre-removebg-preview1.png" alt="Logo" /></a>
-    <img src="img/menu sandwish 1.png" alt="menu-hamburger" class="menu-hamburger">
-    
- 
-  <div class="nav-links">
-    <ul>
-      <li><a href="#">Projet</a></li>
-        <li><a href="#">Prêt</a></li>
-        <li><a href="#">Apropos</a></li>
-        <li><a href="#">Contact</a></li>
-        <li><a href="#">Log in</a></li>
-        <li><a href="#">Sign up</a></li>
-        <li><a href="#">Profil</a></li>
-    </ul>
-  </div> -->
-  <!-- 
-  <div class="notre-plateform">
-    <p>Notre plateform, votre succés</p>
-    </div> -->
-  <!-- </section> -->
+  <section class="nav-bar-mobile">
+    <div class="logo-button">
+      <img src="img/logo.png" class="logo-mobile" alt="logo">
+      <div onclick="toggleMenu()"><img src="img/menu sandwish 1.png"  alt="navbar" style="width: 41px ;"></div>
+    </div>
+    <div class="navbar-mobile" id="navbarMobile">
+      <a href="#">Projet ></a>
+      <a href="#">Prêt ></a>
+      <a href="#">A propos</a>
+      <a href="#">Contact</a>
+    </div>
+  </section>
+  <section class="icon-company-link">
+    <a href="#1">
+    <img src="img/tesla.png" alt="logo-tesla">
+  </a>
+  <a href="#1">
+    <img src="img/nvidia.png" alt="logo-tesla">
+  </a>
+  <a href="#2">
+    <img src="img/sony.png" alt="logo-tesla">
+  </a>
+  <a href="#2">
+    <img src="img/search.png" alt="logo-tesla">
+  </a>
+  </section>
   <section class="no-navbar">
     <div class="company-image">
       <h2>
         OUR MOST <br />
         POPULAR PROJECT
       </h2>
-      <div class="grid-container">
+      <div id="1" class="grid-container">
         <div class="image-box" style="background-image: url('img/tesla-comp.png')">
           <div class="hover-content">
             <img src="img/tesla.png" alt="Tesla Logo" />
@@ -87,7 +92,7 @@
           </div>
         </div>
 
-        <div class="image-box" style="background-image: url('img/nvidea-comp.png')">
+        <div id="2" class="image-box" style="background-image: url('img/nvidea-comp.png')">
           <div class="hover-content">
             <img src="img/nvidia.png" alt="Nvidia Logo" />
             <p class="stock-price">143.71</p>
@@ -129,7 +134,8 @@
         <p>Netflix has recently seen a significant rise in its stock price</p>
       </div>
       <div class="apple">
-        <img src="img\apple-logo.png" alt="logo" style="width: clamp(40px, 6vw, 65px); height: clamp(50px, 8vw, 82px);" />
+        <img src="img\apple-logo.png" alt="logo"
+          style="width: clamp(40px, 6vw, 65px); height: clamp(50px, 8vw, 82px);" />
         <p>
           Apple is expected to bounce back in 2024. Key to this recovery are
           products like the Apple Vision Pro
@@ -153,6 +159,12 @@
       <img src="img\facebook.png" alt="facebook">
     </div>
   </section>
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById("navbarMobile");
+      menu.style.display = menu.style.display === "block" ? "none" : "block";
+    }
+  </script>
 
 
 </body>
