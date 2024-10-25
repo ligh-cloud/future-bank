@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="pret.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Martian+Mono:wght@100..800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Martian+Mono:wght@100..800&display=swap" rel="stylesheet">
+  <title>Pret</title>
+</head>
+<body>
+  <section class="body-body">
+    <div class="log-bar">
+        <div class="header">
+        <header>
+          <img src="img/Ajouter_un_titre-removebg-preview1.png" alt="Logo" >
+          <ol>
+            <li>
+              <a href="login.html">Log in</a>
+              <a href="signup.html">Sign up</a>
+            </li>
+          </ol>
+        </header>
+      </div>
+        
+        <div class="navbar">
+          <ul>
+            <a href="projet.html">Projet ></a>
+            <a href="pret.html">Prêt ></a>
+            <a href="apropos.html">A propos</a>
+            <a href="contact.html">Contact</a>
+          </ul>
+        </div>
+      </div>
+      <div class="navbar-mobile">
+        <a href="index.html"><img src="img/Ajouter_un_titre-removebg-preview1.png" alt="Logo" ></a>
+        <img src="img/menu sandwish 1.png" alt="menu-hamburger" class="menu-hamburger">
+      </div>
+    <div class="nav-links">
+        <ul>
+            <li><a href="projet.html">Projet</a></li>
+            <li><a href="pret.html">Prêt</a></li>
+            <li><a href="apropos.html">A propos</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="login.html">Log in</a></li>
+            <li><a href="signup.html">Sign up</a></li>
+            <li><a href="profil.html">Profil</a></li>
+        </ul>
+    </div>
+
+      <div class="notre-plateform">
+        <p>Notre plateform, votre succés</p>
+      </div>
+      
+      
+      <div class="pret-img">
+      </div>
+      <div class="title-page">
+        <div class="line"></div>
+        <span >Loan form</span>
+        <div class="line"></div>
+        
+    </div>  
+    <div class="sous-titre"></div>
+    
+    <form id="form1">
+      
+      <div class="flex-box">
+        
+          <div class="first-one">
+              <div class="just-flex">
+                
+                  <label for="fname">First name </label>
+                  <input placeholder="Your first name.." type="text" id="fname" name="fname" required >
+              </div>
+              <div class="just-flex">
+                  <label for="status">Status</label>
+                  <select id="status" name="status">
+                      <option value="" disabled selected>Select your status</option>
+                      <option value="single">Single</option>
+                      <option value="married">Married</option>
+                      <option value="divorced">Divorced</option>
+                  </select>
+              </div>
+              <div class="just-flex">
+                  <label for="occupation">Occupation</label>
+                  <select id="occupation" name="occupation">
+                      <option value="" disabled selected>Select your occupation</option>
+                      <option value="Accountant">Accountant</option>
+                      <option value="Teacher">Teacher</option>
+                      <option value="Nurse">Nurse</option>
+                      <option value="Sales-Manager">Sales Manager</option>
+                      <option value="Engineer">Engineer</option>
+                      <option value="Marketing-Specialist">Marketing Specialist</option>
+                      <option value="Lawyer">Lawyer</option>
+                      <option value="Business-Analyst">Business Analyst</option>
+                  </select>
+              </div>
+          </div>
+          <div class="second-one">
+              <div class="just-flex">
+                  <label for="lname">Last name</label>
+                  <input placeholder="Your last name.. " type="text" id="lname" name="lname" required >
+              </div>
+              <div class="just-flex">
+                  <label for="id">ID</label>
+                  <input placeholder="ex: AB123456" type="text" id="id" name="id" required >
+              </div>
+              <div class="just-flex">
+                  <label for="age">Age</label>
+                  <input placeholder="ex: 26" type="number" id="age" name="age" required >
+              </div>
+          </div>
+      </div>
+      <br>
+      <div class="third-one">
+          <div class="just-flex">
+              <label for="amount">Amount</label>
+              <input placeholder="ex: 1000" type="number" id="amount" name="amount" required >
+          </div>
+          <div class="just-flex">
+              <label for="date">Date</label>
+              <input placeholder="Credit deposit date. ex: 01/01/2030" type="date" id="date" name="date" required >
+          </div>
+      </div>
+      <div class="button">
+          <p><span style="color: red;">(*):</span> Veuillez renseigner impérativement ces champs</p>
+          <button type="submit" form="form1" value="Submit">Submit</button>
+      </div>
+  </form>
+      
+    <div class="about-add">
+      <img src="img/contact-pic.png" alt="">
+      <div class="text-about-add">
+          <h1>Meeting you where you’re at</h1>
+          <h2>Speak to an advisor</h2>
+          <p>Premium and Generation clients have access to goal setting and financial planning.</p>
+          <h2>Call, chat, or email</h2>
+          <p>Have account-related inquiries? Our team’s here 7 days a week to connect with you.</p>
+          <h2>Self-serve help</h2>
+          <p >Find answers to your investing questions in our help centre, personal finance how-tos, or right in the app.</p>
+          <a href="contact.html" class="contact-btn">Contact us
+          </a>
+      </div>
+    </div>
+
+      
+        
+        
+    <div class="features">
+      <div class="feature-cards">
+          <div class="feature-card">
+              <video width="250px" height="200px" controls autoplay loop src="video/auto_invest_mobius-en-CA.webm"></video>
+              <h3>Free withdrawals</h3>
+              <p>Enjoy a set number of free ATM withdrawals in euros within the eurozone based on your membership — and unlimited free withdrawals abroad in the local currency for BanFuture.</p>
+              
+          </div>
+          <div class="feature-card">
+              <video width="250px" height="200px" controls autoplay loop src="video/self_directed-en-CA (1).mp4"></video>
+              <h3>24/7 chat support</h3>
+              <p>Contact us day and night via the chat in your BankFuture app — in five languages.</p>
+             
+          </div>
+          <div class="feature-card">
+              <video width="250px" height="200px" controls autoplay loop src="video/moonStreakPrivateCredit-en-CA.mp4"></video>
+              <h3>Simply secure</h3>
+              <p>Bank with confidence using our security features.Our innovative security features keep your money and data simply secure.</p>
+             
+          </div>
+          <div class="feature-card">
+              <video width="250px" height="200px" controls autoplay loop src="video/homeEvoFinalCtaMuted-en-CA.webm"></video>
+              <h3>Free withdrawals</h3>
+              <p>Enjoy a set number of free ATM withdrawals in euros within the eurozone based on your membership — and unlimited free withdrawals abroad in the local currency for BanFuture.</p>
+              
+          </div>
+          <div class="feature-card">
+              <video width="250px" height="200px" controls autoplay loop src="video/self_directed-en-CA (1).mp4"></video>
+              <h3>24/7 chat support</h3>
+              <p>Contact us day and night via the chat in your BankFuture app — in five languages.</p>
+              
+          </div>
+          <div class="feature-card">
+              <video width="250px" height="200px" controls autoplay loop src="video/auto_invest_mobius-en-CA.webm"></video>
+              <h3>Simply secure</h3>
+              <p>Bank with confidence using our security features.Our innovative security features keep your money and data simply secure.</p>
+              
+          </div>
+      </div>
+      <div class="carousel-dots">
+          <span class="dot active"></span>
+          <span class="dot"></span>
+      </div>
+    </div>
+  <div class="contact">
+    <a href="apropos.html">Pourquoi Future<span style="color: #389C73;">Bank</span>?</a>
+  </div>
+  <div class="contact-icon">
+    <img src="img/contact.png" alt="espace client">
+    <img src="img/message.png" alt="message">
+  </div>
+  </section>
+  <div class="calculatrice"><img src="img/calc.png" alt=""></div>
+
+
+<section class="about-add">
+  <video width="40%" controls autoplay loop src="video/028b52c8-77c8-4c75-87c3-83ced6fe1ea8.mp4" ></video>
+  <div class="text-about-add">
+      <h1>AND SEND ACROSS THE GLOBE TOO</h1>
+      <p>Whether it’s Morocco or Mexico, you can transfer there — really, really fast. Oh, and the rates are as good as you’ve heard.</p>
+      <a href="apropos" class="explore-btn">See how far you can send it
+      </a>
+  </div>
+</section>
+      
+
+
+
+<section class="footer">
+  <div class="support">
+    <h3 style="font-size: 24px;">Support</h3>
+    <p style="font-size: 18px; color: black;">(456) 789-12301</p>
+    <br>
+    <p style="font-size: 18px; color: black;">info@future-bank.com</p>
+    <br>
+    <p style="font-size: 18px; color: black;">hay sharaf</p>
+    <br>
+    <p style="font-size: 18px; color: black;">dakhla AGADIR</p>
+  </div>
+  <div class="news">
+    <h3 style="font-size: 24px;">News</h3>
+    <div class="netflix">
+      <img
+        src="img/netflix.png"
+        alt="logo"
+        style="width: 65px; height: 60px;"
+      >
+      <p style="font-size: 18px; color: black;">Netflix has recently seen a significant rise in its stock price</p>
+    </div>
+    <div class="apple">
+      <img
+        src="img/apple-logo.png"
+        alt="logo"
+        style="width: 64px; height: 60px;"
+      >
+      <p style="font-size: 1rem; color: black;">
+        Apple is expected to bounce back in 2024. Key to this recovery are
+        products like the Apple Vision Pro
+      </p>
+    </div>
+  </div>
+  <div class="about-us">
+    <h3 style="font-size: 24px;">About us</h3>
+    
+      <h4>Our company</h4>
+      <h4>Career</h4>
+      <h4>Company overview</h4>
+      <h4>Our company</h4>
+    
+  </div>
+  <div class="social">
+    <h3 style="font-size: 24px;">Social</h3>
+    <img src="img/twitter.png" alt="twitter" >
+    <img src="img/instagram.png" alt="instagram">
+    <img src="img/tiktok.png" alt="tiktok">
+    <img src="img/facebook.png" alt="facebook">
+  </div>
+  <div class="footer-bottom">
+    <p>© 2024 Codebenders. All rights reserved.</p>
+  </div>
+</section>
+
+<script>
+  const menuHamburger = document.querySelector(".menu-hamburger")
+  const navLinks = document.querySelector(".nav-links")
+  const navItems = document.querySelectorAll(".nav-links ul li a");
+  menuHamburger.addEventListener('click',()=>{
+  navLinks.classList.toggle('mobile-menu')
+  });
+  navItems.forEach(item => {
+    item.addEventListener('click', () => {
+        navLinks.classList.remove('mobile-menu');
+    });
+});
+</script>
+</body>
+</html>
