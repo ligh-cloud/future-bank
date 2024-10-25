@@ -342,7 +342,7 @@ body {
     width: 150px;
     font-weight: bold;
 }
-@media only screen and (max-width:412px){
+@media only screen and (max-width:776px){
     .signup-form {
     display: flex;
     flex-direction: column;
@@ -362,6 +362,7 @@ body {
     flex-direction: column;
     justify-content: center;
     padding: 60px;
+    margin-right: -100px;
 }
 .signup-left {
     background-image: url(imghanane/GbLoginText.png); 
@@ -373,6 +374,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-left: -100px;
 }
 .form-group input {
     width: 300px;
@@ -407,4 +409,7 @@ body {
     position: absolute;
     top: 0;
     padding-left: 300px;
+ }
+ .logo2{
+    top: -20px;
  }
