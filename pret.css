@@ -64,14 +64,20 @@
     border-radius: 20px;
     padding: 10px 15px;
   }
+ 
+  .navbar-mobile img{
+    display: block;
+  }
   .navbar-mobile .menu-hamburger {
     display: none;
     position: relative;
+    cursor: pointer;
     margin: 10px 20px 0 ;
   }
   .nav-links ul {
     display: flex;
   }
+  
   
 .pret-img{
     width: 100%;
@@ -175,6 +181,11 @@ p{
     color: white;
     border-radius: 50px;
     transition: all 0.3s ease;
+  }
+  .sous-titre-mobile{
+    position: absolute;
+    display: none;
+    top: 30%;
   }
   /* Features Section */
 .features {
@@ -306,9 +317,19 @@ p{
     gap: 15px;
     padding-top: 10px;
   }
+  .calculatrice{
+    position: absolute;
+    right: 5vw;
+    top: 110vw;
+  }
   @media screen and (max-width: 767px) {
+    .calculatrice{
+        position: absolute;
+        right: 5vw;
+        top: 150vw;
+      }
     .body-body {
-      height: 175vh;
+      height: 170vh;
       width: 100%;
       background-image: linear-gradient(var(--primary-color), var(--secondary-color));
     }
@@ -322,16 +343,17 @@ p{
       
     }
     .navbar-mobile {
-      position: absolute;
-      margin: 20px;
-      margin-left: 40px;
-      display: flex;
-      justify-content: space-between;
-      width: 90vw;
-      box-sizing: border-box;
-      background-color: white;
-     border-radius: 60px;
-    }
+        position: absolute;
+        display: block;
+        margin: 10px;
+        margin-left: 40px;
+        display: flex;
+        justify-content: space-between;
+        width: 90vw;
+        box-sizing: border-box;
+        background-color: white;
+       border-radius: 60px;
+      }
   
     .navbar-mobile img {
       width: 150px;
@@ -340,7 +362,7 @@ p{
     .notre-plateform p {
       display: block;
       position: absolute;
-      top: 15%;
+      top: 10%;
       margin: 20px;
       margin-left: 40px;
       padding: 5px;
@@ -376,23 +398,34 @@ p{
     gap: 20px;
     padding-left: 80vw;
     margin-bottom: 20px;
+    position: absolute;
+    top: 160%;
+    
   }
   .contact-icon img{
+    
     width: 50px;
     height: 50px;
   }
     .contact{
       display: block;
+      position: absolute;
+      top: 150%;
+      left: 20vw;
     }
     .nav-links {
       background-color: #38A28C ;
-      backdrop-filter: blur(7px);
-        width:100%;
+        width:81.5%;
         height: 100vh;
         display: flex;
+        /* position: fixed; */
         justify-content: center;
         align-items: center;
         margin-left: -100%;
+        top: 0;
+        left: -100%; /* Cacher le menu par défaut */
+        transition: left 0.5s ease; 
+        z-index: 1500;
         transition: all 0.5 ease;
     }
   
@@ -479,6 +512,10 @@ p{
       font-size: 26px;
       padding: 10px;
     }
+    .feature-cards{
+        padding-left: 130px;
+        
+    }
   
     .feature-cards p {
       font-family: inter;
@@ -507,10 +544,209 @@ p{
       display: none;
     }
     .title-page{
-        display: none;
+        position: absolute;
+        top: 30%;
+        color: white;
     }
     .pret-img{
         display: none;
     }
+    .title-page .line{
+        height: 1px;
+        background-color: white;
+      }
+      .title-page span{
+          padding: 0 10px;
+          font-family: volkhov;
+          font-size: 40px;
+      }
+      .title-page .line:first-of-type {
+        width: 20vw;
+      }
+      .title-page .line:last-of-type {
+        display: block;
+        flex: 1;
+      }
+      form {
+        position: absolute;
+        top: 35%;
+        padding: 30px;
+    }
+
   }
-    
+  
+  
+ form{
+    margin: 60px;
+ } 
+  
+label {
+
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+
+
+input[type="text"],
+input[type="number"],
+input[type="date"],
+select {
+    width: calc(30% - 10px);
+    height: 20px;
+    padding: 10px;
+    margin-bottom: 20px;
+    margin-right: 10px;
+    border: 1px solid var(--dark-color);
+    border-radius: 10px;
+    font-size: 14px;
+    background-color: #f3f7f7;
+}
+
+input[type="text"]::placeholder,
+input[type="number"]::placeholder,
+input[type="date"]::placeholder,
+select::placeholder {
+    color: black;
+}
+
+/* select {
+    appearance: none;
+    background-color: #fff;
+} */
+
+input#amount,
+input#date {
+    width: 85%;
+}
+
+input#fname,
+input#lname,
+select#status,
+input#id,
+input#number,
+select#occupation,
+input#age {
+    width: calc(400% - 10px);
+    margin: 0 100px;
+}
+
+input::placeholder {
+    color: #888;
+    font-style: italic;
+}
+
+label:after {
+    content: " *";
+    color: red;
+}
+
+form p {
+    width: 100%;
+    font-size: 12px;
+    color: #444;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+.first-one,
+.second-one {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.second-one {
+    justify-content: flex-end;
+}
+
+.flex-box {
+    display: flex;
+    /* gap: 100px; */
+    justify-content: space-between;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+button {
+    width: 292px;
+    height: 50px;
+    border-radius: 40px;
+    color: white;
+    background-color: black;
+
+}
+
+form label {
+    display: flex;
+    align-items: center;
+}
+
+.just-flex {
+    display: flex;
+    gap: 10px;
+}
+
+.first-one label,
+.second-one label {
+    width: 300%;
+}
+
+.first-one input,
+.second-one input {
+    width: 80%;
+}
+
+.third-one label {
+    width: 15%;
+}
+
+.just-flex select {
+    height: 50px;
+}
+
+.button {
+    margin-left: 200px;
+}
+
+@media (max-width: 767px) {
+    form {
+        height: 100vh;
+        padding-right: 30px;
+    }
+
+    input[type="text"],
+    input[type="number"],
+    input[type="date"],
+    select {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .flex-box {
+        display: block;
+    }
+
+    input#fname,
+    input#lname,
+    select#status,
+    input#id,
+    input#number,
+    select#occupation,
+    input#age {
+        width: calc(400% - 10px);
+        margin: 0;
+    }
+   .flex-box{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+   } 
+   .button{
+    margin: 0 auto;
+   }
+}

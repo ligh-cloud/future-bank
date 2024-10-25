@@ -12,14 +12,14 @@
 <link href="https://fonts.googleapis.com/css2?family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Martian+Mono:wght@100..800&display=swap" rel="stylesheet">
-  <title>Document</title>
+  <title>Pret</title>
 </head>
 <body>
   <section class="body-body">
-    <section class="log-bar">
+    <div class="log-bar">
         <div class="header">
         <header>
-          <img src="img\Ajouter_un_titre-removebg-preview1.png" alt="Logo" />
+          <img src="img/calc" alt="Logo" />
           <ol>
             <li>
               <a href="#">Log in</a>
@@ -37,27 +37,28 @@
             <a href="#">Contact</a>
           </ul>
         </div>
-      </section>
+      </div>
       <section class="navbar-mobile">
-        <a href="#"><img src="img\Ajouter_un_titre-removebg-preview1.png" alt="Logo" /></a>
-        <img src="img/menu sandwish 1.png" alt="menu-hamburger" class="menu-hamburger">
-        
-      </section>
-      <div class="nav-links">
+        <a href="#"><img src="img/Ajouter_un_titre-removebg-preview1.png" alt="Logo" /></a>
+        <img src="img\menu sandwish 1.png" alt="menu-hamburger" class="menu-hamburger">
+    </section>
+    <div class="nav-links">
         <ul>
-          <li><a href="#">Projet</a></li>
+            <li><a href="#">Projet</a></li>
             <li><a href="#">Prêt</a></li>
-            <li><a href="#">Apropos</a></li>
+            <li><a href="#">A propos</a></li>
             <li><a href="#">Contact</a></li>
             <li><a href="#">Log in</a></li>
             <li><a href="#">Sign up</a></li>
             <li><a href="#">Profil</a></li>
         </ul>
-      </div>
+    </div>
 
       <section class="notre-plateform">
         <p>Notre plateform, votre succés</p>
       </section>
+      
+      
       <section class="pret-img">
       </section>
       <div class="title-page">
@@ -67,10 +68,75 @@
         
     </div>  
     <div class="sous-titre">
-    <p > Your loan at home calculator</p></div>
+    
+    <form id="form1">
+      
+      <div class="flex-box">
+        
+          <div class="first-one">
+              <div class="just-flex">
+                
+                  <label for="fname">First name </label>
+                  <input placeholder="Your first name.." type="text" id="fname" name="fname" required />
+              </div>
+              <div class="just-flex">
+                  <label for="status">Status</label>
+                  <select id="status" name="status">
+                      <option value="" disabled selected>Select your status</option>
+                      <option value="single">Single</option>
+                      <option value="married">Married</option>
+                      <option value="divorced">Divorced</option>
+                  </select>
+              </div>
+              <div class="just-flex">
+                  <label for="occupation">Occupation</label>
+                  <select id="occupation" name="occupation">
+                      <option value="" disabled selected>Select your occupation</option>
+                      <option value="Accountant">Accountant</option>
+                      <option value="Teacher">Teacher</option>
+                      <option value="Nurse">Nurse</option>
+                      <option value="Sales-Manager">Sales Manager</option>
+                      <option value="Engineer">Engineer</option>
+                      <option value="Marketing-Specialist">Marketing Specialist</option>
+                      <option value="Lawyer">Lawyer</option>
+                      <option value="Business-Analyst">Business Analyst</option>
+                  </select>
+              </div>
+          </div>
+          <div class="second-one">
+              <div class="just-flex">
+                  <label for="lname">Last name</label>
+                  <input placeholder="Your last name.. " type="text" id="lname" name="lname" required />
+              </div>
+              <div class="just-flex">
+                  <label for="id">ID</label>
+                  <input placeholder="ex: AB123456" type="text" id="id" name="id" required />
+              </div>
+              <div class="just-flex">
+                  <label for="age">Age</label>
+                  <input placeholder="ex: 26" type="number" id="age" name="age" required />
+              </div>
+          </div>
+      </div>
+      <br>
+      <div class="third-one">
+          <div class="just-flex">
+              <label for="amount">Amount</label>
+              <input placeholder="ex: 1000" type="number" id="amount" name="amount" required />
+          </div>
+          <div class="just-flex">
+              <label for="date">Date</label>
+              <input placeholder="Credit deposit date. ex: 01/01/2030" type="date" id="date" name="date" required />
+          </div>
+      </div>
+      <div class="button">
+          <p><span style="color: red;">(*):</span> Veuillez renseigner impérativement ces champs</p>
+          <button type="submit" form="form1" value="Submit">Submit</button>
+      </div>
+  </form>
       
     <section class="about-add">
-      <img src="img/contact-pic.png" alt="">
+      <img src="img\contact-pic.png" alt="">
       <div class="text-about-add">
           <h1>Meeting you where you’re at</h1>
           <h2>Speak to an advisor</h2>
@@ -84,43 +150,43 @@
       </div>
     </section>
 
-      <section class="mobile-text">
+      
         
         
     <section class="features">
       <div class="feature-cards">
           <div class="feature-card">
-              <video width="200px" height="150px" controls autoplay loop src="video/auto_invest_mobius-en-CA.webm"></video>
+              <video width="250px" height="200px" controls autoplay loop src="video\auto_invest_mobius-en-CA.webm"></video>
               <h3>Free withdrawals</h3>
               <p>Enjoy a set number of free ATM withdrawals in euros within the eurozone based on your membership — and unlimited free withdrawals abroad in the local currency for BanFuture.</p>
               
           </div>
           <div class="feature-card">
-              <video width="250px" height="200px" controls autoplay loop src="video/self_directed-en-CA (1).mp4"></video>
+              <video width="250px" height="200px" controls autoplay loop src="video\self_directed-en-CA (1).mp4"></video>
               <h3>24/7 chat support</h3>
               <p>Contact us day and night via the chat in your BankFuture app — in five languages.</p>
              
           </div>
           <div class="feature-card">
-              <video width="250px" height="200px" controls autoplay loop src="video/moonStreakPrivateCredit-en-CA.mp4"></video>
+              <video width="250px" height="200px" controls autoplay loop src="video\moonStreakPrivateCredit-en-CA.mp4"></video>
               <h3>Simply secure</h3>
               <p>Bank with confidence using our security features.Our innovative security features keep your money and data simply secure.</p>
              
           </div>
           <div class="feature-card">
-              <video width="250px" height="200px" controls autoplay loop src="video/homeEvoFinalCtaMuted-en-CA.webm"></video>
+              <video width="250px" height="200px" controls autoplay loop src="video\homeEvoFinalCtaMuted-en-CA.webm"></video>
               <h3>Free withdrawals</h3>
               <p>Enjoy a set number of free ATM withdrawals in euros within the eurozone based on your membership — and unlimited free withdrawals abroad in the local currency for BanFuture.</p>
               
           </div>
           <div class="feature-card">
-              <video width="250px" height="200px" controls autoplay loop src="video/self_directed-en-CA (1).mp4"></video>
+              <video width="250px" height="200px" controls autoplay loop src="video\self_directed-en-CA (1).mp4"></video>
               <h3>24/7 chat support</h3>
               <p>Contact us day and night via the chat in your BankFuture app — in five languages.</p>
               
           </div>
           <div class="feature-card">
-              <video width="250px" height="200px" controls autoplay loop src="video/auto_invest_mobius-en-CA.webm"></video>
+              <video width="250px" height="200px" controls autoplay loop src="video\auto_invest_mobius-en-CA.webm"></video>
               <h3>Simply secure</h3>
               <p>Bank with confidence using our security features.Our innovative security features keep your money and data simply secure.</p>
               
@@ -131,15 +197,17 @@
           <span class="dot"></span>
       </div>
   </section>
-  </section>
   <section class="contact">
     <a href="apropos.html">Pourquoi Future<span style="color: #389C73;">Bank</span>?</a>
   </section>
   <div class="contact-icon">
-    <img src="img/contact.png" alt="espace client">
-    <img src="img/message.png" alt="message">
+    <img src="img\contact.png" alt="espace client">
+    <img src="img\message.png" alt="message">
   </div>
-    </section>
+  </section>
+  <div class="calculatrice"><img src="img\calc.png" alt=""></div>
+  
+    
     
 </section>
 </section>
@@ -147,7 +215,7 @@
 
 
 <section class="about-add">
-  <video width="40%" controls autoplay loop src="video/028b52c8-77c8-4c75-87c3-83ced6fe1ea8.mp4" ></video>
+  <video width="40%" controls autoplay loop src="video\028b52c8-77c8-4c75-87c3-83ced6fe1ea8.mp4" ></video>
   <div class="text-about-add">
       <h1>AND SEND ACROSS THE GLOBE TOO</h1>
       <p>Whether it’s Morocco or Mexico, you can transfer there — really, really fast. Oh, and the rates are as good as you’ve heard.</p>
