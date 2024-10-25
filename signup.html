@@ -8,6 +8,20 @@
     <title>the future bank in now available for you</title>
     </head>
     <body>
+        <section class="navbar-mobile" style="padding-left: 800px;">
+            <img src="imghanane/menu sandwish 2.png" alt="menu-hamburger" class="menu-hamburger">
+        </section>
+        <div class="nav-links">
+            <ul>
+                <li><a href="#">Projet</a></li>
+                <li><a href="#">Prêt</a></li>
+                <li><a href="#">A propos</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Log in</a></li>
+                <li><a href="#">Sign up</a></li>
+                <li><a href="#">Profil</a></li>
+            </ul>
+        </div>
     <section class="signup-section">
 
         <div class="signup-left">
@@ -20,7 +34,7 @@
         </div>
 
         <div class="signup-right">
-            <div class="burger2"><img src="imghanane/menu sandwish 2.png" alt="burger-menu"></div>
+            <!-- <div class="burger2"><img src="imghanane/menu sandwish 2.png" alt="burger-menu"></div> -->
             <h1>Create account</h1>
             <form class="signup-form">
                 <div class="form-group">
@@ -47,5 +61,18 @@
             </form>
         </div>
     </section>
+    <script>
+        const menuHamburger = document.querySelector(".menu-hamburger")
+        const navLinks = document.querySelector(".nav-links")
+        const navItems = document.querySelectorAll(".nav-links ul li a");
+        menuHamburger.addEventListener('click',()=>{
+        navLinks.classList.toggle('mobile-menu');
+        });
+        navItems.forEach(item => {
+          item.addEventListener('click', () => {
+              navLinks.classList.remove('mobile-menu');
+          });
+      });
+      </script>
 </body>
 </html>

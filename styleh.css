@@ -281,12 +281,6 @@ body {
     width: 150px;
     height: auto;
 }  
-.burger1{
-    display: none;
-}
-.burger2{
-    display: none;
-}
 .navbar-mobile .menu-hamburger {
     display: none;
     position: relative;
@@ -294,7 +288,7 @@ body {
     margin: 10px 20px 0 ;
   }
   .nav-links ul {
-    display: flex;
+    display: none;
   }
   .navbar-mobile {
     /* display: none; */
@@ -423,7 +417,9 @@ body {
   .navbar-mobile img{
     display: none;
   }
-  
+  .nav-links ul {
+    display: flex;
+  }
 
 @media only screen and (max-width:776px){
     .signup-form {
@@ -445,7 +441,7 @@ body {
     flex-direction: column;
     justify-content: center;
     padding: 60px;
-    margin-right: -100px;
+    margin-right: -150px;
 }
 .signup-left {
     background-image: url(imghanane/GbLoginText.png); 
@@ -487,12 +483,12 @@ body {
 .btn-register {
     margin-left: 100px;
 }
-.burger2{
+/* .burger2{
     display: block;
     position: absolute;
     top: 0;
     padding-left: 300px;
- }
+ } */
  .logo2{
     top: -20px;
  }
