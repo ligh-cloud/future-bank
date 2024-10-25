@@ -8,49 +8,24 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300..900&family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <title>FutureBank FAQ</title>
-    <!-- <script>
-      const allCross = document.querySelectorAll('.visible-pannel img');
-      console.log(allCross);
-
-
-      allCross.forEach(element => {
-
-          element.addEventListener('click', function(){
-
-              const height = this.parentNode.parentNode.childNodes[3].scrollHeight;
-
-              const currentChoice = this.parentNode.parentNode.childNodes[3];
-
-              // console.log(this.src);
-              if(this.src.includes('croix')){
-                  this.src = '/ressources/minus.svg';
-                  gsap.to(currentChoice, {duration: 0.2, height: height + 40, opacity: 1, padding: '20px 15px'})
-              } else if (this.src.includes('minus')){
-                  this.src = '/ressources/croix.svg';
-                  gsap.to(currentChoice, {duration: 0.2, height: 0, opacity: 0, padding: '0px 15px'})
-              }
-              
-          })
-
-      })
-      
-    </script> -->
+    
   </head>
 
   <body>
     <!-- header -->
+
     <section class="log-bar">
       <div class="header">
-      <header>
-        <img src="img\Ajouter_un_titre-removebg-preview1.png" alt="logo" />
-        <ol>
-          <li>
-            <a href="#">Log in</a>
-            <a href="#">Sign up</a>
-          </li>
-        </ol>
-      </header>
-    </div>
+        <header>
+          <img src="img\Ajouter_un_titre-removebg-preview1.png" alt="logo" />
+          <ol>
+            <li>
+              <a href="#">Log in</a>
+              <a href="#">Sign up</a>
+            </li>
+          </ol>
+        </header>
+      </div>
       
       <div class="navbar">
         <ul>
@@ -61,6 +36,7 @@
         </ul>
       </div>
     </section>
+    
     <!-- end header-->
      <!-- FAQ-->
      <section class="faq-section">
@@ -139,6 +115,7 @@
     
     
    <!-- end FAQ -->
+    <!-- contact-->
     <section class="contact-total" >
       
       <div class="titre">
@@ -176,13 +153,77 @@
                 </div>
                 <div class="submit-button">
                     <button type="submit">Submit</button>
-                </div>
-            </form>
-        </div>
-      </div>      
+                </div>  
+              
+           </form>
+         </div>
+        </div>      
       </div>
     </section>
-
+    <!-- end contact-->
+    <section class="explore-more">
+      <span style="width:190px ;"></span>
+      <h2>Explore more</h2>
+      <span style="width:890px;"></span>
+      
+    </section>
+    
+    <!-- feature-card-->
+    <section class="section-ftd features-desktop">
+      <div class="feature-cards-desktop">
+      <div class="feature-card-desktop">
+          <video width="280px" height="200px" controls autoplay loop src="video/auto_invest_mobius-en-CA.webm"></video>
+          <h3>Free withdrawals</h3>
+          <p>Enjoy a set number of free ATM withdrawals in euros within the eurozone based on your membership — and unlimited free withdrawals abroad in the local currency for BanFuture.</p><br><br>
+          <a href="#" class="learn-more">Learn more ></a>
+      </div>
+      <div class="feature-card-desktop">
+          <video width="280px" height="200px" controls autoplay loop src="video/self_directed-en-CA (1).mp4"></video>
+          <h3>24/7 chat support</h3>
+          <p>Contact us day and night via the chat in your BankFuture app — in five languages.</p><br><br>
+          <a href="#" class="learn-more">Visit our support Center  >   </a>
+      </div>
+      <div class="feature-card-desktop">
+          <video width="280px" height="200px" controls autoplay loop src="video/moonStreakPrivateCredit-en-CA.mp4"></video>
+          <h3>Simply secure</h3>
+          <p>Bank with confidence using our security features.Our innovative security features keep your money and data simply secure.</p><br><br>
+          <a href="#" class="learn-more">Security at BankFutur  ></a>
+      </div>
+      <div class="feature-card-desktop">
+          <video width="280px" height="200px" controls autoplay loop src="video/homeEvoFinalCtaMuted-en-CA.webm"></video>
+          <h3>Free withdrawals</h3>
+          <p>Enjoy a set number of free ATM withdrawals in euros within the eurozone based on your membership — and unlimited free withdrawals abroad in the local currency for BanFuture.</p><br><br>
+          <a href="#" class="learn-more">Visit our support Center  >   </a>
+      </div>
+      <div class="feature-card-desktop">
+          <video width="280px" height="200px" controls autoplay loop src="video/self_directed-en-CA (1).mp4"></video>
+          <h3>24/7 chat support</h3>
+          <p>Contact us day and night via the chat in your BankFuture app — in five languages.</p><br><br>
+          <a href="#" class="learn-more">Security at BankFutur  >   </a>
+      </div>
+      <div class="feature-card-desktop">
+          <video width="280px" height="200px" controls autoplay loop src="video/auto_invest_mobius-en-CA.webm"></video>
+          <h3>Simply secure</h3>
+          <p>Bank with confidence using our security features.Our innovative security features keep your money and data simply secure.</p><br><br>
+          <a href="#" class="learn-more">Learn more ></a>
+      </div>
+      </div>
+      </section>
+      <section class="contact-end" style="background-color: #CBE3DB;">
+        <div class="contact-client-all">
+          <dive class="contact-client">
+            <a href="apropos.html">Pourquoi Future<span style="color: #389C73;">Bank</span>?</a>
+          </dive>
+          <div class="client-contact-icon">
+            <img src="img/contact.png" alt="espace client">
+            <img src="img/message.png" alt="message">
+          </div>
+        </div>
+      </section>
+    
+  <!-- end feature-card -->
+    
+      
     <!-- footer -->
     <section class="footer">
       <div class="support">
