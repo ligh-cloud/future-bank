@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <link rel="stylesheet" href="styleh.css" >
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <title>the future bank in now available for you</title>
+    </head>
+    <body>
+        <section class="navbar-mobile" style="padding-left: 800px;">
+            <img src="imghanane/menu-sandwish2.png" alt="menu-hamburger" class="menu-hamburger">
+        </section>
+        <div class="nav-links">
+            <ul>
+                <li><a href="projet.html">Projet</a></li>
+                <li><a href="pret.html">Prêt</a></li>
+                <li><a href="#">A propos</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="login.html">Log in</a></li>
+                <li><a href="signup.html">Sign up</a></li>
+                <li><a href="index.html">Profil</a></li>
+            </ul>
+        </div>
+    <section class="signup-section">
+
+        <div class="signup-left">
+            <div class="logo2">
+                <img src="imghanane/logo.png" alt="Future Bank Logo">
+            </div>
+            <p class="signup-text2">
+                Future Bank, une<br> banque <br> collaborative et <br>innovante
+            </p>
+        </div>
+
+        <div class="signup-right">
+            <!-- <div class="burger2"><img src="imghanane/menu sandwish 2.png" alt="burger-menu"></div> -->
+            <h1>Create account</h1>
+            <form class="signup-form">
+                <div class="form-group">
+                    <input type="text" placeholder="first name" required>
+                    <input type="text" placeholder="last name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" placeholder="E-mail" required>
+                    <input type="text" placeholder="country" required>
+                </div>
+                <div class="form-group">
+                    <input type="password" placeholder="password" required>
+                    <input type="password" placeholder="confirm password" required>
+                </div>
+                <div class="form-checkbox">
+                    <input type="checkbox" required>
+                    <label>I agree to the processing of personal data according to <a href="#">Privacy Policy</a>.</label>
+                </div>
+                <div class="form-checkbox">
+                    <input type="checkbox" required>
+                    <label>I acknowledge my name is correct and corresponds to the government-issued identification.</label>
+                </div>
+                <button type="submit" class="btn-register">Register</button>
+            </form>
+        </div>
+    </section>
+    <script>
+        const menuHamburger = document.querySelector(".menu-hamburger")
+        const navLinks = document.querySelector(".nav-links")
+        const navItems = document.querySelectorAll(".nav-links ul li a");
+        menuHamburger.addEventListener('click',()=>{
+        navLinks.classList.toggle('mobile-menu');
+        });
+        navItems.forEach(item => {
+          item.addEventListener('click', () => {
+              navLinks.classList.remove('mobile-menu');
+          });
+      });
+      </script>
+</body>
+</html>

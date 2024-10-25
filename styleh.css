@@ -1,0 +1,559 @@
+
+.login-section{
+    width: 100%;
+    height : 100vh;
+    background-color:#C0D5CE;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+.container-login{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    background-color:#CBE3DB ;
+    border-radius: 9px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    max-width: 1200px;
+    height: 75vh;
+}
+ .logo{
+    position:absolute;
+    top :15px;
+    left: 120px;
+    z-index: 3;
+ }  
+.logo img{
+    width: 150px;
+    height: auto;
+   pointer-events: none;
+}  
+.login-text-right{
+    background-image: url(imghanane/GbLoginText.png); 
+    padding: 40px;
+    display: flex;
+    flex-direction:column ;
+    justify-content: center;
+    align-items: center;
+    border-radius: 9px;
+   
+ }
+ .login-text-right h1{
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    font-size: 30px; 
+ }
+ .login-text-right P{
+    font-family: 'Poppins', sans-serif;
+    margin-top: 20px;
+    font-size: 20px; 
+    text-align: center;
+
+ }
+ .fleche-login{
+    display: none;
+ }
+ .form-login-box{
+    display: flex;
+    align-items:center;
+    flex-direction: column;
+    background-color: #CBE3DB;
+    padding: 40px;
+    border-radius: 9px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+ }
+ .icone-email{
+    padding-left: 35px;
+    width: 100%;
+    height: 40px;
+    background-image: url(imghanane/icone-email.png);
+    background-size: 19px 25px;
+    background-repeat: no-repeat;
+    background-position:right;
+    
+
+ } 
+ .icone-password{
+    padding-left: 35px;
+    width: 100%;
+    height: 40px;
+    background-image: url(imghanane/icone-pass.png);
+    background-size: 25px 25px;
+    background-repeat: no-repeat;
+    background-position: right;
+ } 
+ .form-login-box h1{
+    height: 60px; 
+    color: black;
+    font-family: 'poppins','sans serif';
+    font-size: 30px; ;
+    margin-bottom: 20px;
+ }
+ .form-login input[type="email"],.form-login input[type="password"]{
+    width: 215px;
+    padding: 10px;
+    margin: 10px 100px;
+    border-radius: 9px;
+    border :none ;
+    font-size: 16px;
+ }
+ .forget-pass{
+    text-align: right;
+    width: 100%;
+    color:black;
+    margin: 10px 90px;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3 ease;
+    font-weight: bold;
+
+}
+.forget-pass:hover{
+    color: #00ccff;
+}
+
+.login-button {
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    margin-top: 10px;
+    width: 100px;
+    font-weight:500;
+    margin-left: 150px;
+}
+.signup-text{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    gap: 40px;
+}
+.signup-text P{
+    margin-top: 20px;
+    color: black;
+    font-size: 14px;
+}
+
+.signup-text a {
+    color: white;
+    background-color: black;
+    height: 20px;
+    padding: 10px ;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0,3s ease;
+    margin-top: 15px;
+}
+.signup-text a:hover{
+    background-color:green; 
+}
+/* css pour sign up  */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #C0D5CE;
+}
+
+.signup-section {
+    display: flex;
+    height: 87vh;
+    background-color: #C0D5CE ;
+    padding-top: 50px;
+   padding-left: 25px;
+   padding-right: 25px;
+}
+
+
+.signup-left {
+    background-image: url(imghanane/GbLoginText.png); 
+    background-size: cover;
+    background-position: center;
+    width: 20%;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.signup-text2 {
+    font-size: 24px;
+    text-align:center;
+    color: #333;
+    font-weight: 600;
+    padding-bottom :200px;
+}
+
+
+.signup-right {
+    width: 65%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 60px;
+}
+
+.signup-right h1 {
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    text-align:start;
+}
+
+.signup-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    gap: 20px;
+}
+
+.form-group input {
+    width: 80px;
+    flex: 1;
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-checkbox {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.form-checkbox input {
+    margin-top: 5px;
+}
+
+.form-checkbox a {
+    color:black;
+    text-decoration: none;
+}
+
+.form-checkbox a:hover {
+    text-decoration: underline;
+}
+
+.btn-register {
+    background-color:#C0D5CE;
+    color: black;
+    text-align: center;
+    border: none;
+    border-radius: 25px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 140px; 
+    height: 35px;
+    margin-left: 280PX;
+}
+
+.btn-register:hover {
+    background-color: #6d917c;
+}
+.logo2{
+    position:absolute;
+    top :40px;
+    left: 35px;
+    z-index: 3;
+ }  
+.logo2 img{
+    width: 150px;
+    height: auto;
+}  
+.navbar-mobile .menu-hamburger {
+    display: none;
+    position: relative;
+    cursor: pointer;
+    margin: 10px 20px 0 ;
+  }
+  .nav-links ul {
+    display: none;
+  }
+  .navbar-mobile {
+    /* display: none; */
+    position: fixed; /* Positionne la navbar */
+    top: 0; /* Positionner en haut de la page */
+      left: 0; /* Commencer à gauche */
+      right: 0; /* S'étendre jusqu'à droite */
+      z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    width: auto;
+  }
+  .navbar-mobile img{
+    display: none;
+  }
+
+@media only screen and (max-width:767px){
+    .container-login{
+        display: grid;
+        grid-template-rows: repeat(4, 1fr);
+        background-color: transparent;
+        box-shadow: none;
+        padding: 0;
+        height: 100vh;
+        gap: 0;
+
+
+    }
+    .login-text-right{
+        grid-column: 1/3;
+        grid-row: 1/2;
+        padding: 0;
+        height: 125vh;
+        width: 148vw;
+        gap: 90px;
+        background-size: cover;
+    }
+    .fleche-login{
+        display: flex;
+        margin-left: 150px;
+            animation: bounce 1s ease-in-out infinite;
+    }
+          @keyframes bounce {
+            0% {
+                transform: translateY(10px);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+            100% {
+                transform: translateY(10px);
+            }
+          }
+    .fleche-login img{
+        width: 70px;
+        height: 70px;
+    }
+
+    .login-text-right h1{
+      margin-left: 150px;
+    }
+    .login-text-right p{
+        margin-left: 150px;
+    }
+    .form-login-box{
+        grid-column: 1/3;
+        grid-row: 2/3;
+        height: 115vh;
+    }
+    .form-login-box h1{
+        padding-top: 150px;
+        padding-left: 150px;
+    }
+    .logo{
+        top :-30px;
+        left: 0px;
+        z-index: 3;
+}
+.signup-text a { 
+    width: 100px;
+    padding: 10px;
+    text-align: center;
+}
+.signup-text{
+    margin-left: 160px;
+    margin-top: 10px;
+    gap: 5px;
+}
+  .burger1{
+   display: block;
+   position: absolute;
+   top: 0;
+   right: -170px;
+   margin: 0;
+}
+.form-login input[type="email"],.form-login input[type="password"]{
+    margin: 10px 350px;
+    width: 260px;
+    height: 40px;
+    font-size: 17px;
+    font-weight: 200;
+}
+.form-login{
+    margin-left: 150px;
+}
+.forget-pass{
+    margin: 10px 350px;
+    margin-top: 20px;
+}
+.login-button{
+    margin-left: 400px;
+    width: 150px;
+    font-weight: bold;
+}
+.navbar-mobile {
+    /* display: none; */
+    position: fixed; /* Positionne la navbar */
+    top: 0; /* Positionner en haut de la page */
+      left: 0; /* Commencer à gauche */
+      right: 0; /* S'étendre jusqu'à droite */
+      z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    width: auto;
+  }
+  .navbar-mobile img{
+    display: none;
+  }
+  .nav-links ul {
+    display: flex;
+  }
+
+@media only screen and (max-width:776px){
+    .signup-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.signup-right {
+    width: 100%;
+    height: 1170px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 60px;
+    margin-right: -150px;
+}
+.signup-left {
+    background-image: url(imghanane/GbLoginText.png); 
+    background-size: cover;
+    background-position: center;
+    width: 800px;
+    height: 1200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: -100px;
+}
+.form-group input {
+    width: 300px;
+    flex: 1;
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.form-checkbox {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    font-size: 20px;
+    line-height: 1.5;
+    width: 300px;
+}
+.signup-section {
+    display:flex;
+    height: 100vh;
+    width: 100%;
+    background-color: #C0D5CE ;
+    padding-top: 0;
+} 
+.btn-register {
+    margin-left: 100px;
+}
+/* .burger2{
+    display: block;
+    position: absolute;
+    top: 0;
+    padding-left: 300px;
+ } */
+ .logo2{
+    top: -20px;
+ }
+ .navbar-mobile .menu-hamburger {
+    display: block;
+    width: 80px;
+    height: 60px;
+    
+  }
+  .navbar-mobile {
+    position: absolute;
+    display: block;
+    margin: 10px;
+    margin-left: 40px;
+    display: flex;
+    justify-content: space-between;
+    width: 90vw;
+    box-sizing: border-box;
+    background-color:transparent;
+   border-radius: 60px;
+  }
+
+  .navbar-mobile img {
+    width: 150px;
+    height: 80px;
+  }
+  .navbar-mobile img{
+    display: block;
+  }
+  .nav-links {
+    background-color: #38A28C ;
+      width:81.5%;
+      height: 100vh;
+      display: flex;
+      position: fixed;
+      justify-content: center;
+      align-items: center;
+      top: 0;
+        left: -100%; /* Cacher le menu par défaut */
+        transition: left 0.5s ease; 
+        z-index: 1500;
+  }
+  .nav-links.mobile-menu {
+    left: 0; /* Affiche le menu quand la classe active est ajoutée */
+}
+
+.nav-links ul {
+  flex-direction: column; /* Aligne les éléments en colonne */
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-links a {
+  padding: 25px 0;
+  font-size: 1.2em;
+  border: none;
+  color: white;
+}
+
+  .nav-links ul li {
+    padding: 25px 0;
+    font-size: 1.2em;
+    font-family: istok web;
+  }
+
+  .nav-links .mobile-menu {
+    margin-left:0;
+  }
