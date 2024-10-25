@@ -36,7 +36,24 @@
         </ul>
       </div>
     </section>
-    
+    <section classe="log-bar-navbar-mobile">
+      <div class="navbar-mobile">
+        <a href="index.html"><img src="img/Ajouter_un_titre-removebg-preview1.png" alt="Logo" ></a>
+        <img src="img/menu sandwish 1.png" alt="menu-hamburger" class="menu-hamburger">
+      </div>
+    <div class="nav-links">
+        <ul>
+            <li><a href="projet.html">Projet</a></li>
+            <li><a href="pret.html">Prêt</a></li>
+            <li><a href="apropos.html">A propos</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="login.html">Log in</a></li>
+            <li><a href="signup.html">Sign up</a></li>
+            <li><a href="index.html">Home</a></li>
+        </ul>
+    </div>
+
+    </section>
     <!-- end header-->
      <!-- FAQ-->
      <section class="faq-section">
@@ -276,5 +293,19 @@
       </div>
     </section>
     <!-- end footer -->
+    <script>
+      const menuHamburger = document.querySelector(".menu-hamburger")
+      const navLinks = document.querySelector(".nav-links")
+      const navItems = document.querySelectorAll(".nav-links ul li a");
+      menuHamburger.addEventListener('click',()=>{
+      navLinks.classList.toggle('mobile-menu');
+      });
+      navItems.forEach(item => {
+        item.addEventListener('click', () => {
+            navLinks.classList.remove('mobile-menu');
+        });
+    });
+    </script>
   </body>
+  
 </html>

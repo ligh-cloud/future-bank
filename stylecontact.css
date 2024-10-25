@@ -341,6 +341,42 @@ footer h3{
     padding-top: 10px;
 }
 /*end footer*/
+.log-bar-navbar-mobile{
+    display: none;
+
+}
+.navbar-mobile{
+    display:none;
+}
+.nav-links{
+    display:none;
+}
+.navbar-mobile .menu-hamburger {
+    display: none;
+    position: relative;
+    cursor: pointer;
+    margin: 10px 20px 0 ;
+  }
+  .nav-links ul {
+    display: flex;
+  }
+  .navbar-mobile {
+    /* display: none; */
+    position: fixed; /* Positionne la navbar */
+    top: 0; /* Positionner en haut de la page */
+      left: 0; /* Commencer à gauche */
+      right: 0; /* S'étendre jusqu'à droite */
+      z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    width: auto;
+  }
+  .navbar-mobile img{
+    display: none;
+  }
+  
+
+
 
 @media only screen and (max-width:768px) {
     body{
@@ -561,6 +597,79 @@ footer h3{
     height: 200px;
     font-size: 12px;
   }
+
+
+  /*------------------*/
+  .navbar-mobile .menu-hamburger {
+    display: block;
+    width: 80px;
+    height: 60px;
+    
+  }
+  .navbar-mobile {
+    position: absolute;
+    display: block;
+    margin: 10px;
+    margin-left: 40px;
+    display: flex;
+    justify-content: space-between;
+    width: 90vw;
+    box-sizing: border-box;
+    background-color: white;
+   border-radius: 60px;
+  }
+
+  .navbar-mobile img {
+    width: 150px;
+    height: 80px;
+  }
+  .navbar-mobile img{
+    display: block;
+  }
+
+  .nav-links {
+    background-color: #38A28C ;
+      width:81.5%;
+      height: 100vh;
+      display: flex;
+      position: fixed;
+      justify-content: center;
+      align-items: center;
+      top: 0;
+        left: -100%; /* Cacher le menu par défaut */
+        transition: left 0.5s ease; 
+        z-index: 1500;
+  }
+  .nav-links.mobile-menu {
+    left: 0; /* Affiche le menu quand la classe active est ajoutée */
+}
+
+.nav-links ul {
+  flex-direction: column; /* Aligne les éléments en colonne */
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-links a {
+  padding: 25px 0;
+  font-size: 1.2em;
+  border: none;
+  color: white;
+}
+
+  .nav-links ul li {
+    padding: 25px 0;
+    font-size: 1.2em;
+    font-family: istok web;
+  }
+
+  .nav-links .mobile-menu {
+    margin-left:0;
+  }
+  .faq{
+    margin-top: 100px;
+  }
+
 
 
 
