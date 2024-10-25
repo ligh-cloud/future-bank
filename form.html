@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>the future bank in now available for you</title>
+    <style>
+        label {
+
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        form {
+            padding: 30px;
+        }
+
+        input[type="text"],
+        input[type="number"],
+        input[type="date"],
+        select {
+            width: calc(30% - 10px);
+            height: 30px;
+            padding: 10px;
+            margin-bottom: 20px;
+            margin-right: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 14px;
+            background-color: #f3f7f7;
+        }
+
+        input[type="text"]::placeholder,
+        input[type="number"]::placeholder,
+        input[type="date"]::placeholder,
+        select::placeholder {
+            color: #aaa;
+        }
+
+        /* select {
+            appearance: none;
+            background-color: #fff;
+        } */
+
+        input#amount,
+        input#date {
+            width: 85%;
+        }
+
+        input#fname,
+        input#lname,
+        select#status,
+        input#id,
+        input#number,
+        select#occupation,
+        input#age {
+            width: calc(400% - 10px);
+            margin: 0 100px;
+        }
+
+        input::placeholder {
+            color: #888;
+            font-style: italic;
+        }
+
+        label:after {
+            content: " *";
+            color: red;
+        }
+
+        form p {
+            width: 100%;
+            font-size: 12px;
+            color: #444;
+            font-style: italic;
+            margin-bottom: 10px;
+        }
+
+        .first-one,
+        .second-one {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        .second-one {
+            justify-content: flex-end;
+        }
+
+        .flex-box {
+            display: flex;
+            /* gap: 100px; */
+            justify-content: space-between;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        button {
+            width: 292px;
+            height: 50px;
+            border-radius: 40px;
+            color: white;
+            background-color: black;
+
+        }
+
+        form label {
+            display: flex;
+            align-items: center;
+        }
+
+        .just-flex {
+            display: flex;
+            gap: 10px;
+        }
+
+        .first-one label,
+        .second-one label {
+            width: 300%;
+        }
+
+        .first-one input,
+        .second-one input {
+            width: 80%;
+        }
+
+        .third-one label {
+            width: 15%;
+        }
+
+        .just-flex select {
+            height: 50px;
+        }
+
+        .button {
+            margin-left: 200px;
+        }
+
+        @media (max-width: 767px) {
+            form {
+                height: 100vh;
+                padding-right: 30px;
+            }
+
+            input[type="text"],
+            input[type="number"],
+            input[type="date"],
+            select {
+                width: 100%;
+                margin-right: 0;
+            }
+
+            .flex-box {
+                display: block;
+            }
+
+            input#fname,
+            input#lname,
+            select#status,
+            input#id,
+            input#number,
+            select#occupation,
+            input#age {
+                width: calc(400% - 10px);
+                margin: 0;
+            }
+           .flex-box{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+           } 
+           .button{
+            margin: 0 auto;
+           }
+        }
+    </style>
+</head>
+
+<body>
+    <form id="form1">
+        <div class="flex-box">
+            <div class="first-one">
+                <div class="just-flex">
+                    <label for="fname">First name </label>
+                    <input placeholder="Your first name.." type="text" id="fname" name="fname" required />
+                </div>
+                <div class="just-flex">
+                    <label for="status">Status</label>
+                    <select id="status" name="status">
+                        <option value="" disabled selected>Select your status</option>
+                        <option value="single">Single</option>
+                        <option value="married">Married</option>
+                        <option value="divorced">Divorced</option>
+                    </select>
+                </div>
+                <div class="just-flex">
+                    <label for="occupation">Occupation</label>
+                    <select id="occupation" name="occupation">
+                        <option value="" disabled selected>Select your occupation</option>
+                        <option value="Accountant">Accountant</option>
+                        <option value="Teacher">Teacher</option>
+                        <option value="Nurse">Nurse</option>
+                        <option value="Sales-Manager">Sales Manager</option>
+                        <option value="Engineer">Engineer</option>
+                        <option value="Marketing-Specialist">Marketing Specialist</option>
+                        <option value="Lawyer">Lawyer</option>
+                        <option value="Business-Analyst">Business Analyst</option>
+                    </select>
+                </div>
+            </div>
+            <div class="second-one">
+                <div class="just-flex">
+                    <label for="lname">Last name</label>
+                    <input placeholder="Your last name.. " type="text" id="lname" name="lname" required />
+                </div>
+                <div class="just-flex">
+                    <label for="id">ID</label>
+                    <input placeholder="ex: AB123456" type="text" id="id" name="id" required />
+                </div>
+                <div class="just-flex">
+                    <label for="age">Age</label>
+                    <input placeholder="ex: 26" type="number" id="age" name="age" required />
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="third-one">
+            <div class="just-flex">
+                <label for="amount">Amount</label>
+                <input placeholder="ex: 1000" type="number" id="amount" name="amount" required />
+            </div>
+            <div class="just-flex">
+                <label for="date">Date</label>
+                <input placeholder="Credit deposit date. ex: 01/01/2030" type="date" id="date" name="date" required />
+            </div>
+        </div>
+        <div class="button">
+            <p><span style="color: red;">(*):</span> Veuillez renseigner impérativement ces champs</p>
+            <button type="submit" form="form1" value="Submit">Submit</button>
+        </div>
+    </form>
+</body>
+
+</html>
