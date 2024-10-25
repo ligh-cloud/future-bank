@@ -290,7 +290,19 @@ body {
     .fleche-login{
         display: flex;
         margin-left: 150px;
+            animation: bounce 1s ease-in-out infinite;
     }
+          @keyframes bounce {
+            0% {
+                transform: translateY(10px);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+            100% {
+                transform: translateY(10px);
+            }
+          }
     .fleche-login img{
         width: 70px;
         height: 70px;
