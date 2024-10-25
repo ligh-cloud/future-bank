@@ -112,10 +112,11 @@ li :first-child {
 .feature-cards-desktop {
   display: flex;
   z-index: 1000;
+  background-color: var(--primary-color);
   gap: 4rem;
   overflow-x: auto;
   scroll-behavior: smooth;
-  margin: 250px 0;
+  padding: 250px 0;
   padding-left: 5.5rem;
 }
 .feature-card-desktop {
@@ -184,7 +185,7 @@ li :first-child {
 /* Home Styles */
 .home-img {
   width: 100%;
-  height: auto;
+  height: 900px;
   background: url('img/image10.png') no-repeat fixed 50% 50%;
   background-size: cover;
 }
@@ -717,7 +718,7 @@ font-weight: 600;
 transform: scale(1.01);
 }
 .navbar-mobile {
-  background-color: #38A28C; /* Change la couleur de fond ici */
+  /* display: none; */
   position: fixed; /* Positionne la navbar */
   top: 0; /* Positionner en haut de la page */
     left: 0; /* Commencer à gauche */
@@ -725,8 +726,10 @@ transform: scale(1.01);
     z-index: 1000;
   display: flex;
   justify-content: space-between;
-  padding: 5px 20px; /* Ajoute du padding */
   width: auto;
+}
+.navbar-mobile img{
+  display: none;
 }
 
 @media screen and (max-width: 767px) {
@@ -746,6 +749,7 @@ transform: scale(1.01);
   }
   .navbar-mobile {
     position: absolute;
+    display: block;
     margin: 10px;
     margin-left: 40px;
     display: flex;
@@ -802,6 +806,9 @@ transform: scale(1.01);
 .contact-icon img{
   width: 50px;
   height: 50px;
+}
+.navbar-mobile img{
+  display: block;
 }
   .contact{
     display: block;
