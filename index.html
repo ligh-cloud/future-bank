@@ -38,21 +38,20 @@
         </div>
       </section>
       <section class="navbar-mobile">
-        <a href="#"><img src="img\Ajouter_un_titre-removebg-preview1.png" alt="Logo" /></a>
+        <a href="#"><img src="img/Ajouter_un_titre-removebg-preview1.png" alt="Logo" /></a>
         <img src="img/menu sandwish 1.png" alt="menu-hamburger" class="menu-hamburger">
-        
-      </section>
-      <div class="nav-links">
+    </section>
+    <div class="nav-links">
         <ul>
-          <li><a href="#">Projet</a></li>
+            <li><a href="#">Projet</a></li>
             <li><a href="#">Prêt</a></li>
-            <li><a href="#">Apropos</a></li>
+            <li><a href="#">A propos</a></li>
             <li><a href="#">Contact</a></li>
             <li><a href="#">Log in</a></li>
             <li><a href="#">Sign up</a></li>
             <li><a href="#">Profil</a></li>
         </ul>
-      </div>
+    </div>
 
       <section class="notre-plateform">
         <p>Notre plateform, votre succés</p>
@@ -333,13 +332,13 @@
       <p>© 2024 Codebenders. All rights reserved.</p>
   </section>
   </section>
-</body>
+
 <script>
   const menuHamburger = document.querySelector(".menu-hamburger")
   const navLinks = document.querySelector(".nav-links")
   const navItems = document.querySelectorAll(".nav-links ul li a");
   menuHamburger.addEventListener('click',()=>{
-  navLinks.classList.toggle('mobile-menu')
+  navLinks.classList.toggle('mobile-menu');
   });
   navItems.forEach(item => {
     item.addEventListener('click', () => {
@@ -347,4 +346,5 @@
     });
 });
 </script>
+</body>
 </html>

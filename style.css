@@ -48,6 +48,7 @@ a {
 
 .navbar a {
   color: black;
+  
 }
 
 li a + a {
@@ -67,6 +68,7 @@ li :first-child {
 .navbar-mobile .menu-hamburger {
   display: none;
   position: relative;
+  cursor: pointer;
   margin: 10px 20px 0 ;
 }
 .nav-links ul {
@@ -714,6 +716,19 @@ background-color: transparent;
 font-weight: 600;
 transform: scale(1.01);
 }
+.navbar-mobile {
+  background-color: #38A28C; /* Change la couleur de fond ici */
+  position: fixed; /* Positionne la navbar */
+  top: 0; /* Positionner en haut de la page */
+    left: 0; /* Commencer à gauche */
+    right: 0; /* S'étendre jusqu'à droite */
+    z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 20px; /* Ajoute du padding */
+  width: auto;
+}
+
 @media screen and (max-width: 767px) {
   .body-body {
     height: 225vh;
@@ -731,7 +746,7 @@ transform: scale(1.01);
   }
   .navbar-mobile {
     position: absolute;
-    margin: 20px;
+    margin: 10px;
     margin-left: 40px;
     display: flex;
     justify-content: space-between;
@@ -793,24 +808,33 @@ transform: scale(1.01);
   }
   .nav-links {
     background-color: #38A28C ;
-    backdrop-filter: blur(7px);
-      width:100%;
+      width:81.5%;
       height: 100vh;
       display: flex;
+      position: fixed;
       justify-content: center;
       align-items: center;
-      margin-left: -100%;
-      transition: all 0.5 ease;
+      top: 0;
+        left: -100%; /* Cacher le menu par défaut */
+        transition: left 0.5s ease; 
+        z-index: 1500;
   }
+  .nav-links.mobile-menu {
+    left: 0; /* Affiche le menu quand la classe active est ajoutée */
+}
 
-  .nav-links ul {
-    display: flex;
-    flex-direction: column;      
-  }
+.nav-links ul {
+  flex-direction: column; /* Aligne les éléments en colonne */
+  justify-content: center;
+  align-items: center;
+}
 
-  .nav-links a {
-    border: none;
-  }
+.nav-links a {
+  padding: 25px 0;
+  font-size: 1.2em;
+  border: none;
+  color: white;
+}
 
   .nav-links ul li {
     padding: 25px 0;
@@ -913,5 +937,7 @@ transform: scale(1.01);
   .footer-bottom{
     display: none;
   }
-  
+  ul a{
+    color: white;
+  }
 }
