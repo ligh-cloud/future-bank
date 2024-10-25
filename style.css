@@ -27,6 +27,7 @@ a {
 .log-bar {
   position: fixed;
   background-color: white;
+  z-index: 10;
   width: 100%;
 }
 
@@ -63,12 +64,110 @@ li :first-child {
   border-radius: 20px;
   padding: 10px 15px;
 }
+.navbar-mobile .menu-hamburger {
+  display: none;
+  position: relative;
+  margin: 10px 20px 0 ;
+}
+.nav-links ul {
+  display: flex;
+}
+
+.notre-plateforme {
+  display: none;
+  position: relative;
+}
+.mobile-text {
+  display: none;
+}
+/* Features Section */
+.features {
+  padding: 1.5rem 0 1rem 0;
+}
+
+.feature-cards {
+  display: flex;
+  gap: 2rem;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  margin-bottom: 50px;
+}
+.feature-card {
+  min-width: 300px;
+  padding: 1rem;
+  background: rgba(0, 0, 0, 0.311);
+  border-radius: 30px;
+  border: 10px solid rgba(0, 0, 0, 0.395);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
+  
+}
+
+.feature-card-mobile {
+  min-width: 300px;
+  padding: 1rem;
+}
+
+
+.feature-cards-desktop {
+  display: flex;
+  gap: 4rem;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  margin: 250px 0;
+  padding-left: 5.5rem;
+}
+.feature-card-desktop {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  min-width: 400px;
+  height: 600px;
+  padding: 1rem;
+  background: rgba(0, 0, 0, 0.311);
+  border-radius: 30px;
+  border: 10px solid rgba(0, 0, 0, 0.395);
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+  
+}
+.feature-card-desktop video{
+  width: 100%;
+}
+.feature-cards-desktop h3 {
+  font-family: volkhov;
+  color: black;
+  font-size: 30px;
+  font-weight: 600;
+  padding: 10px;
+}
+
+.feature-cards-desktop p {
+  font-family: inter;
+  font-size: 24px;
+  color: black;
+}
+.feature-card-desktop a {
+  font-family: inter;
+  font-size: 20px;
+  color: black;
+  padding-top: 300px;
+  padding: 10px;
+  justify-self: flex-end;
+  align-self: flex-end;
+}
+
+
+
+/* .feature-card-desktop {
+  min-width: 300px;
+  padding: 1rem;
+} */
+
 
 /* Home Styles */
 .home-img {
   width: 100%;
   height: auto;
-  background-image: url('img/image10.png');
+  background: url('img/image10.png') no-repeat fixed 50% 50%;
   background-size: cover;
 }
 .pret-img{
@@ -76,25 +175,24 @@ li :first-child {
   height: 1000px;
   background-image: url('img/pret.png');
   background-size: cover;
-  /* background-position: center; */
-  
   
 }
-.home-img img{
-  width: 7em;
-} 
+
 .home-img{
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
 }
-
+.home-img img{
+  width: 6em;
+} 
 .home-img a {
   color: white;
   background-color: black;
   border-radius: 20px;
   padding: 10px;
+  margin-top: 31%;
 }
 
 /* Footer Styles */
@@ -102,6 +200,7 @@ li :first-child {
   width: 100%;
   height: 530px;
   display: grid;
+  padding-top: 10%;
   grid-template-columns:repeat(24,1fr);
   grid-template-rows: repeat(8,1fr);
   column-gap: 20px;
@@ -118,19 +217,22 @@ footer h3 {
   grid-column: 2/6;
   grid-row: 1/6;
 }
-
+.footer-bottom{
+  grid-column: 9/20;
+  grid-row: 7/8;
+}
 .news {
-  grid-column: 8/11;
+  grid-column: 7/14;
   grid-row: 1/7 ;
 }
 
 .about-us {
-  grid-column: 14/17;
+  grid-column: 15/20;
   grid-row: 1/6;
 }
 
 .social {
-  grid-column: 20/24;
+  grid-column: 21/24;
   width: 50px; 
   height: 50px;
 }
@@ -139,7 +241,7 @@ footer h3 {
   margin: 30px 0;
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 20px;
 }
 
 .apple , .netflix {
@@ -158,13 +260,14 @@ footer h3 {
 .home-image {
   position: relative;
   background-color: var(--dark-color);
+  z-index: 11;
   height: 100%;
 }
 
 .home img {
   position: absolute;
   width: 100%;
-  height: 100%;
+  height: 130vh;
   opacity: 0;
   transition: opacity var(--transition-time);
 }
@@ -292,6 +395,8 @@ footer h3 {
   border-radius: 50px;
   transition: all 0.3s ease;
 }
+.add-btn a:hover{
+  transform: scale(1.05);}
 
 .add-btn:hover {
   
@@ -301,37 +406,31 @@ footer h3 {
 .explore-btn {
   margin-top: 40px;
   padding: 10px 20px 10px; 
-  width: 150px;
+  width: 200px;
   background-color: black;
   color: white;
   border-radius: 50px;
   transition: all 0.3s ease;
 }
 
-.y-us-btn {
-  margin-top: 400px;
-  margin-left: 50px;
+.contact {
+  margin-top: 40px;
+  margin-left: 20vw;
+  margin-right: 20vw;
   padding: 10px 30px ; 
   width: 250px;
   background-color: white;
-  
   border-radius: 50px;
   transition: all 0.3s ease;
-  font-size: 600;
-  display: flex;
-  justify-content: center;
-  
 }
 
-.y-us-btn a {
-  font-size: 600;
+.contact a {
   font-size: 22px;
   color: black;
 }
-
 .explore-btn a {
   padding: 10px 20px 10px; 
-  width: 150px;
+  width: 180px;
   color: white;
   font-size: 5px;
 }
@@ -377,25 +476,32 @@ footer h3 {
 }
 
 .icons {
-  width: 90%;
-  height: 50px;
+  width: 100%;
+  height: 0px;
   display: flex;
+  justify-content: space-around;
+  align-items: center;
   cursor: pointer;
 
 }
 
-.icons:hover {
+.icons svg:hover {
   transform: scale(1.05);
   
 }
 
 .about-add {
   display: flex;
-  padding-top: 100px;
-  padding-left: 30px;
+  padding: 100px 20px ;
+  background-color: var(--primary-color);
 }
-
+.about-add video{
+  border-radius: 50px;
+}
 .text-about-add {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
   padding: 200px 100px 0 100px;
 }
 
@@ -407,45 +513,9 @@ footer h3 {
 
 .text-about-add a {
   font-family: volkhov;
-  font-size: 10px;
+  font-size: 15px;
 }
 
-/* Features Section */
-.features {
-  padding: 1rem 0 1rem 0;
-  top: 10%;
-  
-}
-
-.feature-cards {
-  display: flex;
-  gap: 2rem;
-  margin-bottom: 2rem;
-  overflow-x: auto;
-  scroll-behavior: smooth;
-  
-  
-}
-
-
-.feature-card {
-  flex: 1;
-  min-width: 250px;
-  padding: 1rem;
-  background: rgba(0, 0, 0, 0.311);
-  border-radius: 25px;
-  border-color: black;
-  border: 8px solid rgba(0, 0, 0, 0.395);
-  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
-  
-}
-
-.feature-card-mobile {
-  /* flex: 1; */
-  padding: 10px;
-  display: none;
-  width: 200px;
-}
 
 .carousel-dots {
   display: flex;
@@ -465,30 +535,14 @@ footer h3 {
   background: #4CAF50;
 }
 
-.navbar-mobile .menu-hamburger {
-  display: none;
-  position: relative;
-  width: 80px;
-  margin: 10px 15px 0 15px;
-}
+
 .contact-icon{
   display: none;
 }
-.nav-links ul {
-  display: flex;
-}
 
-.notre-plateforme {
-  display: none;
-  position: relative;
-  width: 80px;
-  margin: 10px 15px 0 15px;
-}
 
-.mobile-text {
-  display: none;
-}
-.y-us-btn{
+
+.contact{
   display: none;
 }
 .netflix-logo {
@@ -544,9 +598,9 @@ p.netflix-description{
 p{
   font-family: inter;
   font-weight: 600;
-  font-size: 30px;
+  font-size: 20px;
   color: var(--gray-color);
-  padding-left: 300px;
+  padding-left: 10px;
 }
 .title-page .line{
   height: 1px;
@@ -623,102 +677,82 @@ background-color: transparent;
 font-weight: 600;
 transform: scale(1.01);
 }
-@media screen and (max-width: 412px) {
+@media screen and (max-width: 767px) {
   .body-body {
-    height: 165vh;
+    height: 170vh;
     width: 100%;
     background-image: linear-gradient(var(--primary-color), var(--secondary-color));
   }
-.contact-icon{
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  gap: 20px;
-  padding-left: 350px;
-}
-.contact-icon img{
-  width: 50px;
-  height: 50px;
-}
   .log-bar {
     display: none;
   }
+  .navbar-mobile .menu-hamburger {
+    display: block;
+    width: 80px;
+    height: 60px;
+    
+  }
+  .navbar-mobile {
+    position: absolute;
+    margin: 20px;
+    margin-left: 40px;
+    display: flex;
+    justify-content: space-between;
+    width: 90vw;
+    box-sizing: border-box;
+    background-color: white;
+   border-radius: 60px;
+  }
 
+  .navbar-mobile img {
+    width: 150px;
+    height: 80px;
+  }
+  .notre-plateform p {
+    display: block;
+    position: absolute;
+    top: 11%;
+    margin: 20px;
+    margin-left: 40px;
+    padding: 5px;
+    width: 90vw;
+    box-sizing: border-box;
+    background-image: linear-gradient(to right, #133628 , #87F3C7);
+   border-radius: 60px;
+   font-family: inter;
+   font-size: 25px;
+   font-weight: 500;
+   color: white;
+  }
   .mobile-text {
     left: 6%;
     right: 5%;
     display: block;
     position: absolute;
-    top: 20%;
+    top: 22%;
   }
 
   .mobile-text h1 {
     font-weight: 600;
     color: white;
     font-family: inter;
-    font-size: 28px;
-
+    font-size: 38px;
   }
 
-  .mobile-text h3 {
-    font-weight: 600;
-    color: white;
-    font-family: inter;
-    font-size: 18px;
-
-  }
-  .y-us-btn{
+.contact-icon{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 20px;
+  padding-left: 80vw;
+}
+.contact-icon img{
+  width: 50px;
+  height: 50px;
+}
+  .contact{
     display: block;
   }
-
-  .notre-plateform p {
-    display: block;
-    /* width: 80px; */
-    margin: 10px 15px 0 15px;
-    position: absolute;
-    top: 10%;
-    margin: 20px;
-    padding: 5px;
-    width: 90vw;
-    box-sizing: border-box;
-    background-image: linear-gradient(to right, #133628 , #87F3C7);
-    
-   border-radius: 60px;
-   font-family: inter;
-   font-size: 500;
-   color: white;
-  }
-
-  .navbar-mobile .menu-hamburger {
-    display: block;
-    width: 50px;
-    height: 50px;
-    
-  }
-
-  .navbar-mobile {
-    position: absolute;
-    margin: 20px;
-    display: flex;
-    justify-content: space-between;
-    width: 90vw;
-    box-sizing: border-box;
-    background-color: white;
-    /* box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); */
-   border-radius: 60px;
-  }
-
-  .navbar-mobile img {
-    width: 100px;
-    height: 70px;
-  }
-
-  /* .home-img {
-    width: 100%;
-    height: 100vh;
-    background-color: ;
-  } */
-
   .nav-links {
     background-color: #38A28C ;
     backdrop-filter: blur(7px);
@@ -760,9 +794,16 @@ transform: scale(1.01);
   }
 
   .news {
-    grid-column: 13/19;
+    grid-column: 14/24;
   }
-
+  .support p{
+    color: black;
+    font-size: 18px;
+  }
+  .support h3, .about-us h3, .news h3, .social h3{
+    font-size: 25px;
+    font-weight: 600;
+  }
   .about-us {
     grid-column: 8/12;
     grid-row: 2/7;
@@ -774,18 +815,21 @@ transform: scale(1.01);
     grid-column: 2/6 ;
     grid-row: 2/5;
     font-size: 13px;
-    gap: 10px;
+    gap: 5px;
   }
-
+.about-us h4{
+  font-size: 18px;
+}
   .social {
     grid-column: 2/12;
   }
+ 
 
   .social {
     flex-direction: row;
     gap: 10px;
-    width: 20px; 
-    height: 20px;
+    width: 30px; 
+    height: 30px;
   }
 
   .apple , .netflix {
@@ -804,12 +848,14 @@ transform: scale(1.01);
     font-family: volkhov;
     color: black;
     font-size: 26px;
+    padding: 10px;
   }
 
   .feature-cards p {
     font-family: inter;
     color: black;
   }
+  
 
   .home-img {
     display: none;
@@ -822,7 +868,9 @@ transform: scale(1.01);
   .about-add {
     display: none;
   }
-
+.features-card{
+  display: none;
+}
   .feature-card {
     padding-bottom: 5rem;
   }
