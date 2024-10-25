@@ -62,7 +62,28 @@
     padding: 40px;
     border-radius: 9px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
  }
+ .icone-email{
+    padding-left: 35px;
+    width: 100%;
+    height: 40px;
+    background-image: url(imghanane/icone-email.png);
+    background-size: 19px 25px;
+    background-repeat: no-repeat;
+    background-position:right;
+    
+
+ } 
+ .icone-password{
+    padding-left: 35px;
+    width: 100%;
+    height: 40px;
+    background-image: url(imghanane/icone-pass.png);
+    background-size: 25px 25px;
+    background-repeat: no-repeat;
+    background-position: right;
+ } 
  .form-login-box h1{
     height: 60px; 
     color: black;
