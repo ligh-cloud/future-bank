@@ -1,0 +1,391 @@
+/* General Styles */
+:root {
+    --primary-color: #CBE3DB;
+    --secondary-color: #3BC38E;
+    --gray-color: #9E9E9E;
+    --dark-color: #2e4b1f;
+    --transition-time: 300ms;
+  }
+  * {
+    padding: 0;
+    margin: 0;
+    font-family: "Istok Web", sans-serif;
+    list-style-type: none;  
+  }
+  .body, .body-body {
+    background: var(--primary-color);
+  }
+  a {
+    text-decoration: none;
+    font-weight: 600;
+  }
+  /* Header Styles */
+  .header {
+    border-bottom: 2px solid black;
+  }
+  
+  .log-bar {
+    position: fixed;
+    background-color: white;
+    z-index: 10;
+    width: 100%;
+  }
+  
+  .log-bar header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 65px;
+    height: 101px;
+  }
+  
+  /* Navigation Styles */
+  .navbar ul {
+    display: flex;
+    gap: 60px;
+    margin: 10px 95px;
+  }
+  
+  .navbar a {
+    color: black;
+  }
+  
+  li a + a {
+    background-color: var(--secondary-color);
+    color: white;
+    border: 2px var(--secondary-color) solid;
+    border-radius: 20px;
+    padding: 10px;
+  }
+  
+  li :first-child {
+    color: black;
+    border: 2px var(--secondary-color) solid;
+    border-radius: 20px;
+    padding: 10px 15px;
+  }
+  .navbar-mobile .menu-hamburger {
+    display: none;
+    position: relative;
+    margin: 10px 20px 0 ;
+  }
+  .nav-links ul {
+    display: flex;
+  }
+  
+.pret-img{
+    width: 100%;
+    height: 1000px;
+    background-image: url('img/pret.png');
+    background-size: cover;
+    
+  }
+  .title-page{
+	display: flex;
+    align-items: center;
+}
+p{
+    font-family: inter;
+    font-weight: 600;
+    font-size: 20px;
+    padding-left: 10px;
+  }
+  .title-page .line{
+    height: 1px;
+    background-color: black;
+  }
+  .title-page span{
+      padding: 0 10px;
+      font-family: volkhov;
+      font-size: 60px;
+  }
+  .title-page .line:first-of-type {
+    width: 300px;
+  }
+  .title-page .line:last-of-type {
+    flex: 1;
+  }
+  .about-add {
+    display: flex;
+    padding: 100px 20px ;
+    background-color: var(--primary-color);
+  }
+  .about-add img{
+    border-radius: 50px;
+    width: 50vw;
+    height: 50vh;
+  }
+  .text-about-add {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 200px 100px 0 100px;
+  }
+  
+  .text-about-add h1 {
+    font-family: volkhov;
+    font-size: 40px;
+    padding-bottom: 60px;
+  }
+  
+  .text-about-add a {
+    font-family: volkhov;
+    font-size: 15px;
+  }
+  
+/* Footer Styles */
+.footer {
+    width: 100%;
+    height: 530px;
+    display: grid;
+    padding-top: 10%;
+    grid-template-columns:repeat(24,1fr);
+    grid-template-rows: repeat(8,1fr);
+    column-gap: 20px;
+    row-gap: 20px;
+  }
+  
+  footer h3 {
+    font-size: 36;
+    font-weight: bold;
+    margin-bottom: 0;
+  }
+  
+  .support {
+    grid-column: 2/6;
+    grid-row: 1/6;
+  }
+  .footer-bottom{
+    grid-column: 9/20;
+    grid-row: 7/8;
+  }
+  .news {
+    grid-column: 7/14;
+    grid-row: 1/7 ;
+  }
+  
+  .about-us {
+    grid-column: 15/20;
+    grid-row: 1/6;
+  }
+  
+  .social {
+    grid-column: 21/24;
+    width: 50px; 
+    height: 50px;
+  }
+  
+  .support , .news , .about-us , .social {
+    margin: 30px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .apple , .netflix {
+    display: flex;
+    gap: 15px;
+    padding-top: 10px;
+  }
+  @media screen and (max-width: 767px) {
+    .body-body {
+      height: 175vh;
+      width: 100%;
+      background-image: linear-gradient(var(--primary-color), var(--secondary-color));
+    }
+    .log-bar {
+      display: none;
+    }
+    .navbar-mobile .menu-hamburger {
+      display: block;
+      width: 80px;
+      height: 60px;
+      
+    }
+    .navbar-mobile {
+      position: absolute;
+      margin: 20px;
+      margin-left: 40px;
+      display: flex;
+      justify-content: space-between;
+      width: 90vw;
+      box-sizing: border-box;
+      background-color: white;
+     border-radius: 60px;
+    }
+  
+    .navbar-mobile img {
+      width: 150px;
+      height: 80px;
+    }
+    .notre-plateform p {
+      display: block;
+      position: absolute;
+      top: 11%;
+      margin: 20px;
+      margin-left: 40px;
+      padding: 5px;
+      width: 90vw;
+      box-sizing: border-box;
+      background-image: linear-gradient(to right, #133628 , #87F3C7);
+     border-radius: 60px;
+     font-family: inter;
+     font-size: 25px;
+     font-weight: 500;
+     color: white;
+    }
+    .mobile-text {
+      left: 6%;
+      right: 5%;
+      display: block;
+      position: absolute;
+      top: 22%;
+    }
+  
+    .mobile-text h1 {
+      font-weight: 600;
+      color: white;
+      font-family: inter;
+      font-size: 38px;
+    }
+  
+  .contact-icon{
+    position: sticky;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-left: 80vw;
+    margin-bottom: 20px;
+  }
+  .contact-icon img{
+    width: 50px;
+    height: 50px;
+  }
+    .contact{
+      display: block;
+    }
+    .nav-links {
+      background-color: #38A28C ;
+      backdrop-filter: blur(7px);
+        width:100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: -100%;
+        transition: all 0.5 ease;
+    }
+  
+    .nav-links ul {
+      display: flex;
+      flex-direction: column;      
+    }
+  
+    .nav-links a {
+      border: none;
+    }
+  
+    .nav-links ul li {
+      padding: 25px 0;
+      font-size: 1.2em;
+      font-family: istok web;
+    }
+  
+    .nav-links .mobile-menu {
+      margin-left:0;
+    }
+  
+    .footer {
+      height: 500px;
+      row-gap: 2px;
+      column-gap: 2px;
+      background-color: #38A28C;
+    }
+  
+    .news {
+      grid-column: 14/24;
+    }
+    .support p{
+      color: black;
+      font-size: 18px;
+    }
+    .support h3, .about-us h3, .news h3, .social h3{
+      font-size: 25px;
+      font-weight: 600;
+    }
+    .about-us {
+      grid-column: 8/12;
+      grid-row: 2/7;
+      font-size: 13px;
+      gap: 10px;
+    }
+  
+    .support {
+      grid-column: 2/6 ;
+      grid-row: 2/5;
+      font-size: 13px;
+      gap: 5px;
+    }
+  .about-us h4{
+    font-size: 18px;
+  }
+    .social {
+      grid-column: 2/12;
+    }
+   
+  
+    .social {
+      flex-direction: row;
+      gap: 10px;
+      width: 30px; 
+      height: 30px;
+    }
+  
+    .apple , .netflix {
+      gap: 10px;
+      padding-top: 10px;
+      width: 200px; 
+      height: 200px;
+      font-size: 12px;
+    }
+  
+    .feature-card-mobile {
+      display: block;
+    }
+  
+    .feature-cards h3 {
+      font-family: volkhov;
+      color: black;
+      font-size: 26px;
+      padding: 10px;
+    }
+  
+    .feature-cards p {
+      font-family: inter;
+      color: black;
+    }
+    
+  
+    .home-img {
+      display: none;
+    }
+  
+    .home {
+      display: none;
+    }
+  
+    .about-add {
+      display: none;
+    }
+  .features-desktop{
+    display: none;
+  }
+    .feature-card {
+      padding-bottom: 5rem;
+    }
+    .footer-bottom{
+      display: none;
+    }
+    
+  }
+    
