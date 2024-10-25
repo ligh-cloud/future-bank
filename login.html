@@ -9,10 +9,25 @@
     </head>
     
     <body> 
+        <section class="navbar-mobile" style="padding-left: 800px;">
+            <img src="imghanane/menu sandwish 2.png" alt="menu-hamburger" class="menu-hamburger">
+        </section>
+        <div class="nav-links">
+            <ul>
+                <li><a href="#">Projet</a></li>
+                <li><a href="#">Prêt</a></li>
+                <li><a href="#">A propos</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Log in</a></li>
+                <li><a href="#">Sign up</a></li>
+                <li><a href="#">Profil</a></li>
+            </ul>
+        </div>
+    
         <section class="login-section"> 
             <div class="container-login">
                 <img src="imghanane/logo.png" alt="logo" class="logo">
-                <div class="burger1"><img src="imghanane/menu sandwish 2.png" alt="burger-menu"></div>
+                <!-- <div class="burger1"><img src="imghanane/menu sandwish 2.png" alt="burger-menu"></div> -->
                 <div class="form-login-box">
                      <h1>Log in </h1>
                       <form class="form-login">
@@ -33,6 +48,19 @@
                 </div>
             </div>
         </section>
+        <script>
+            const menuHamburger = document.querySelector(".menu-hamburger")
+            const navLinks = document.querySelector(".nav-links")
+            const navItems = document.querySelectorAll(".nav-links ul li a");
+            menuHamburger.addEventListener('click',()=>{
+            navLinks.classList.toggle('mobile-menu');
+            });
+            navItems.forEach(item => {
+              item.addEventListener('click', () => {
+                  navLinks.classList.remove('mobile-menu');
+              });
+          });
+          </script>
     </body>
 
 
